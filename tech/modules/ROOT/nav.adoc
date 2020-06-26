@@ -1,2 +1,2 @@
 * xref:index.adoc[Introduction]
-* xref:0.1@elearn-tf:ROOT:index.adoc.adoc[Infrastructure - Terraform]
+* xref:0.1@elearn-tf:ROOT:index.adoc[Infrastructure - Terraform]
