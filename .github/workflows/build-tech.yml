@@ -22,7 +22,7 @@
 #
 #   AZURE_DEVOPS_TOKEN - a Personal Access Token for an account that has access to the Azure Devops Project
 
-name: Trigger Azure TEchnical Docs Build
+name: Trigger Azure Build for Tech Docs
 
 on:
   push:

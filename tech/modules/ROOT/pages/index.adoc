@@ -6,4 +6,5 @@ This is version *{page-component-version}* of the  guide.
 
 == Page source
 
-This page is sourced from the AsciiDoc file named [.path]_index.adoc_ that is located at [.path]_tech/modules/ROOT/pages_.
+Source:  [.path]_tech/modules/ROOT/pages_.
+Repo: [page-origin-url]
