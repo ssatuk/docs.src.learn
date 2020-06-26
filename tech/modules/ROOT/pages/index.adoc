@@ -1,6 +1,6 @@
 = SSAT e-Learning Platforms
 
-Lorem Ipsum
+Lorem Ipsum blah
 
 This is version *{page-component-version}* of the  guide.
 

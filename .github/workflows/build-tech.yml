@@ -29,7 +29,7 @@ on:
     branches:    
       - master
     paths:
-      - 'tech/*'
+      - 'tech/**'
 
 jobs:
   trigger-build:
