@@ -1,0 +1,5 @@
+= SSAT e-Learning Platforms
+
+A guide for staff
+
+This is version *{page-component-version}* of the  guide.
