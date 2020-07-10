@@ -1,0 +1,3 @@
+* xref:index.adoc[Moodle Technical Overview]
+* xref:configuration/index.adoc[Moodle Configuration]
+

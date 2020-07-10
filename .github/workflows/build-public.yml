@@ -41,4 +41,4 @@ jobs:
       with:
         token: ${{ secrets.PUBLISH_PAT }}
         event-type: build
-        repository: ssatuk/docs.src.public
+        repository: ssatuk/docs.build.public
