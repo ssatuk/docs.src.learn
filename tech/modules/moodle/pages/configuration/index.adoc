@@ -1,1 +1,7 @@
 = Moodle Configuration
+
+In this section we cover the key aspects of site configuration that are required for key features, especially integration.
+
+== Web Services
+
+Moodle uses incoming and outgoing xref:configuration/webservices.adoc[web services] to integrate with other systems.

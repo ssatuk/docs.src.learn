@@ -1,0 +1,21 @@
+= Moodle web services
+
+Moodle uses web services to integrate with other systems.
+
+== Inbound web services
+
+|===
+|Service|comments
+
+|RESTful API|Inbound web API, xref:configuration/restful-api.adoc[see details] 
+|MNet|_to follow_
+|===
+
+== Outbound web services
+
+|===
+|Service|comments
+
+|MNet|_to follow_
+|Events|_to follow_
+|===

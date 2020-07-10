@@ -1,0 +1,54 @@
+= Moodle RESTful API
+
+This is an inbound web service provided by the RESTful plugin
+
+== Overall settings
+
+Logged in to Moodle as an administrator access `admin/settings.php?section=webservicesoverview`
+
+.Moodle Webservices Overview page
+image::mdl-webservices-overview.png[Moodle Webservices Overview page]
+
+Guidance on settings:
+
+
+.Settings
+|===
+|Setting|Comments
+
+|Enable web services
+|This master switch must be on
+|Enable protocols
+|Click this, the list on the next page will depend on what plugins are installed, we use the **Restful** interface which must be enabled. Also select "**Web services documentation**".
+|Create a specific user
+|Create a user called `ssatappservice`, with email `appservice@ssatuk.co.uk` and authenticating with manual accounts. Create a strong password, but please note this user never logs in directly, it is only used with token authentication for web service access.
+|Check new user capability
+a|* https://docs.moodle.org/39/en/Creating_custom_roles[Create a new role] called `Web Service User` 
+** archetype manager
+** contexts system, category, course
+** grant `moodle/webservice:createtoken`
+** grant `webservice/rest:use`
+** grant `webservice/restful:use`
+** _other roles to follow_
+* https://docs.moodle.org/39/en/Assign_roles[Assign the role] to the new user
+|Select a service / select ta specific user
+a|
+* Make sure we have a REST api service
+* add access for our user
+* check functions:
+** auth_email_signup_user	
+** core_auth_confirm_user	
+** core_enrol_get_course_enrolment_methods	
+** core_enrol_get_enrolled_users	
+** core_user_create_users	
+** core_user_delete_users	
+** core_user_get_users	
+** core_user_update_users	
+** enrol_manual_enrol_users	
+** enrol_manual_unenrol_users
+|Create a token for a user
+|https://docs.moodle.org/39/en/Using_web_services#Create_a_token[Create token], save securely
+|===
+
+
+
