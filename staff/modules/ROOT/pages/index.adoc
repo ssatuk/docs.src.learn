@@ -1,5 +1,11 @@
 = SSAT e-Learning Platforms
 
-A guide for staff
 
-This is version *{page-component-version}* of the  guide.
+In this section of the documentation you will find tips and techniques for using the SSAT e-learning platform based on Moodle and Mahara.
+
+
+You can use the navigation to the left, the component selector bottom left or the search box to find content.
+
+If you find an error, or your question isn't answered, please mailto:help@ssatuk.co.uk?subject=issue%20with%20staff%20technical%20docs[raise a helpdesk ticket]
+
+IMPORTANT: This documentation section is not yet written, Please look out for announcements in Teams.
