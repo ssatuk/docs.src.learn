@@ -1,0 +1,25 @@
+= Mahara Overview
+
+[WARNING]
+====
+Our Mahara installation is still being fine-tuned. Although we welcome staff and consultants to start to use it, please:
+
+* be aware that some details may change
+* do not share with customers yet
+====
+
+== What is Mahara?
+
+Mahara is a web application that provides a combination of an xref:techniques:e-portfolio.adoc[e-portfolio] and xref:techniques:social-learning.adoc[social networking / social learning] within defined groups.
+
+Within the rest of this documentation we will explore
+
+* basic Mahara concepts
+* Mahara operations
+
+
+== Further information
+
+See the https://manual.mahara.org/en/20.04/intro/introduction.html[introduction to the Mahara online manual].
+
+We currently use version **20.04**

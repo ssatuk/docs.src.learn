@@ -7,4 +7,4 @@ You can use the navigation to the left, the component selector bottom left or th
 
 If you find an error, or your question isn't answered, please mailto:help@ssatuk.co.uk?subject=issue%20with%20staff%20technical%20docs[raise a helpdesk ticket]
 
-IMPORTANT: This documentation section is not yet written, Please look out for announcements in Teams.
+IMPORTANT: This documentation section is still very much "under construction" and subject to continual change: please look out for announcements in Teams.

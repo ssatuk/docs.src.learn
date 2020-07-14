@@ -1,5 +1,8 @@
 name: elearnstaff
 title: e-Learning Platform Overview
-version: '0.1'
+version: '1.0'
 nav:
 - modules/ROOT/nav.adoc
+- modules/techniques/nav.adoc
+- modules/mahara/nav.adoc
+- modules/moodle/nav.adoc
