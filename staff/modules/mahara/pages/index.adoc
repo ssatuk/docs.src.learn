@@ -12,9 +12,12 @@ Our Mahara installation is still being fine-tuned. Although we welcome staff and
 
 Mahara is a web application that provides a combination of an xref:techniques:e-portfolio.adoc[e-portfolio] and xref:techniques:social-learning.adoc[social networking / social learning] within defined groups.
 
-Within the rest of this documentation we will explore
+Within the rest of this documentation we will explore:
 
 * basic Mahara concepts
+** artefacts
+** pages & collections
+** groups
 * Mahara operations
 
 

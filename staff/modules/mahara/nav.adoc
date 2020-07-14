@@ -1,1 +1,3 @@
 * xref:index.adoc[Mahara]
+** xref:concepts.adoc[Concepts]
+** xref:operations.adoc[Operations]
