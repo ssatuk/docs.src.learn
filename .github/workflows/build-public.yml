@@ -42,3 +42,9 @@ jobs:
         token: ${{ secrets.PUBLISH_PAT }}
         event-type: build
         repository: ssatuk/docs.build.public
+    
+    - name: Invoke Netlify deployment hook
+      uses: distributhor/workflow-webhook@v1
+      env:
+        webhook_url: ${{ secrets.NETLIFY_HOOK_DOCS_PUBLIC }}?trigger_title=docs.src.learn
+        webhook_secret: "SSAT"
