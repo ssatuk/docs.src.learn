@@ -1,5 +1,5 @@
 name: elearn
 title: e-Learning Platform Overview
-version: '0.1'
+version: '1.0'
 nav:
 - modules/ROOT/nav.adoc
