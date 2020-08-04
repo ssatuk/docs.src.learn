@@ -1,10 +1,13 @@
 = SSAT e-Learning Platforms
 
-
-In this section of the documentation you will find tips and techniques for using the SSAT e-learning platform based on Moodle and Mahara.
+In this section of the documentation you will find tips and techniques for delivering learning to members or CPD delegates using a range of tools, including our core e-learning platform based on Moodle and Mahara.
 
 You can use the navigation to the left, the component selector bottom left or the search box to find content.
 
-If you find an error, or your question isn't answered, please mailto:help@ssatuk.co.uk?subject=issue%20with%20staff%20technical%20docs[raise a helpdesk ticket]
+We have a wide range of xref:tools.adoc[tools] available to us, and for most scenarios you have a choice of how to deliver a particular piece of learning.
+
+A good place to start is xref:techniques:index.adoc[the discussion on techniques and patterns].
+
+If you find an error, or your question isn't answered, please start a discussion in the https://teams.microsoft.com/l/channel/19%3ae23779254c244d358a58dc03de748cfb%40thread.skype/Documentation?groupId=f3d3a37e-0fdb-4e4b-bb64-9a22e0ee3c13&tenantId=c5263ca1-a2e1-42fd-81bb-effcd1666efd[Digital Tools/Documentation channel] or mailto:help@ssatuk.co.uk?subject=issue%20with%20staff%20technical%20docs[raise a helpdesk ticket]
 
 IMPORTANT: This documentation section is still very much "under construction" and subject to continual change: please look out for announcements in Teams.

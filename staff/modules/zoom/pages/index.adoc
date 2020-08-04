@@ -1,0 +1,26 @@
+= Introduction to Zoom
+
+== General Zoom help and guidance
+
+See the https://support.zoom.us/hc/en-us[Zoom Help Centre]
+
+== SSAT licensing
+
+To use Zoom outside the free account limits a licence is required.
+
+We have a small number of Zoom Pro licences in SSAT:
+
+* the account owner licence permanently assigned to `webadmin@ssatuk.co.uk`
+* a 500 user add-on that is normally left assigned to `zoombrand@ssatuk.co.uk`
+* a small number of licences which are re-allocated as required for e-learning purposes
+
+== Creating a Zoom meeting from within Moodle
+
+There is a special linkage between Moodle and Zoom (details to be added to the Moodle documentation)
+
+To make use of this:
+
+* you **must** have a Zoom licence assigned to your personal SSAT email
+* you **must** login to Moodle with your personal SSAT email
+* your Moodle account must have **Teacher** role or greater in the course
+* **do not** attempt to setup a Zoom meeting with another account and link it from inside the Moodle course

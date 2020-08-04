@@ -4,5 +4,7 @@ version: '1.0'
 nav:
 - modules/ROOT/nav.adoc
 - modules/techniques/nav.adoc
+- modules/ROOT/nav2.adoc
+- modules/zoom/nav.adoc
 - modules/mahara/nav.adoc
 - modules/moodle/nav.adoc
