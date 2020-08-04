@@ -1,0 +1,35 @@
+= Overview of e-learning tools available
+
+== Introduction
+
+This page lists the core tools, when specific documentation sections are written links will be added here.
+
+There are many other niche tools that can be used for specific tasks, if there is something you want to use why not https://teams.microsoft.com/l/channel/19%3ada3e76e137e74dab962ca52122e6c1e2%40thread.tacv2/General?groupId=8e1a8b16-7d0e-4704-b2ee-1e290eee7ee9&tenantId=c5263ca1-a2e1-42fd-81bb-effcd1666efd[start a discussion in Teams Digital Delivery/General]?
+
+== Tools Overview
+
+|===
+
+|Tool|Applicability to e-Learning|Audience constraints|Other comments
+
+|Microsoft Teams
+|
+|
+|
+
+|Zoom
+|
+|
+|
+
+|Moodle
+|
+|
+|
+
+|Mahara
+|
+|
+|
+
+|===

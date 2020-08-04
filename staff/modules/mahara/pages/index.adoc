@@ -15,9 +15,6 @@ Mahara is a web application that provides a combination of an xref:techniques:e-
 Within the rest of this documentation we will explore:
 
 * basic Mahara concepts
-** artefacts
-** pages & collections
-** groups
 * Mahara operations
 
 
