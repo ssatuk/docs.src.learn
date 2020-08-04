@@ -1,13 +1,5 @@
 = Mahara Overview
 
-[WARNING]
-====
-Our Mahara installation is still being fine-tuned. Although we welcome staff and consultants to start to use it, please:
-
-* be aware that some details may change
-* do not share with customers yet
-====
-
 == What is Mahara?
 
 Mahara is a web application that provides a combination of an xref:techniques:e-portfolio.adoc[e-portfolio] and xref:techniques:social-learning.adoc[social networking / social learning] within defined groups.
@@ -17,6 +9,18 @@ Within the rest of this documentation we will explore:
 * basic Mahara concepts
 * Mahara operations
 
+== SSAT instance of Mahara
+
+Our implementation of Mahara is available at https://myportfolio.ssat.cloud[https://myportfolio.ssat.cloud,role=external,window=_blank] 
+
+[WARNING]
+====
+Our Mahara installation is still being fine-tuned. Although we welcome staff and consultants to start to use it, please:
+
+* be aware that some details may change
+* do not share with customers yet
+* if you see an issue with uploading or saving something this may be because we are fine-tuning the firewall on the server - in this case please log what you were doing and the time you were doing it as exactly as possible in a helpdesk ticket
+====
 
 == Further information
 

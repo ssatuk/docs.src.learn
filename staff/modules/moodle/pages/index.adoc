@@ -1,1 +1,22 @@
 = Introduction to Moodle
+
+== Overview
+
+Moodle is a learning platform designed to provide educators, administrators and learners with a single robust, secure and integrated system to create personalised learning environments.
+
+Our implementation of Moodle is available at https://mylearning.ssat.cloud[https://mylearning.ssat.cloud,role=external,window=_blank] 
+
+Logging in is via SSO, please use your normal Microsoft credentials.
+
+While this documentation is being written you may find this other information of use:
+
+* https://docs.moodle.org/39/en/Main_page[Official Moodle documentation]
+* https://wiki.ucl.ac.uk/display/MoodleResourceCentre/Miniguides[UCL Moodle MiniGuides for Staff]
+
+
+[WARNING]
+====
+Our new Moodle  installation is still being fine-tuned. 
+
+If you see an issue with uploading or saving something this may be because we are fine-tuning the firewall on the server - in this case please log what you were doing and the time you were doing it as exactly as possible in a helpdesk ticket.
+====

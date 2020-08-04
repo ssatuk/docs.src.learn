@@ -1,2 +1,34 @@
 = Mahara Concepts
 
+The following concepts are used throughout Mahara
+
+[cols="1,3a", options="header"] 
+|===
+|Concept
+|Explanation
+
+|Artefact
+|A piece of information that a learner collects or creates including:
+
+* journal entries
+* uploaded content 
++
+NOTE: to manage cost we impose fairly tight disk space limits per user (default 50MB)
+* curated links
+* embedded content from cloud sources
+
+|Page
+|A web page assembled by a learner inside Mahara to combine various artefacts which can be submitted or shared as portfolio evidence
+
+|Collection
+|A grouping of multiple Pages that can be submitted or shared as portfolio evidence
+
+|Institution
+|A grouping of users that belong to the same institution, with common settings
+
+NOTE: we add all users to a single institution called "SSAT" because all are authenticated through a common mechanism
+
+|Group
+|A group of users that can have private content or discussion forums
+
+|===
