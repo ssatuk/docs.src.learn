@@ -4,6 +4,7 @@ version: '1.0'
 asciidoc: 
   attributes: 
     mahara-manual-url: https://manual.mahara.org/en/20.04/
+    page-help-url: https://teams.microsoft.com/l/channel/19%3ae23779254c244d358a58dc03de748cfb%40thread.skype/Documentation?groupId=f3d3a37e-0fdb-4e4b-bb64-9a22e0ee3c13&tenantId=c5263ca1-a2e1-42fd-81bb-effcd1666efd
 nav:
 - modules/ROOT/nav.adoc
 - modules/techniques/nav.adoc
@@ -11,3 +12,4 @@ nav:
 - modules/zoom/nav.adoc
 - modules/mahara/nav.adoc
 - modules/moodle/nav.adoc
+- modules/ROOT/nav3.adoc
