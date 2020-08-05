@@ -6,8 +6,8 @@ Mahara is a web application that provides a combination of an xref:techniques:e-
 
 Within the rest of this documentation we will explore:
 
-* basic Mahara concepts
-* Mahara operations
+* xref:concepts.adoc[basic Mahara concepts]
+* xref:operations.adoc[Mahara operations]
 
 == SSAT instance of Mahara
 
@@ -24,6 +24,4 @@ Our Mahara installation is still being fine-tuned. Although we welcome staff and
 
 == Further information
 
-See the https://manual.mahara.org/en/20.04/intro/introduction.html[introduction to the Mahara online manual].
-
-We currently use version **20.04**
+{mahara-manual-url}intro/introduction.html[See the introduction to the Mahara online manual,role=external,window=_blank]

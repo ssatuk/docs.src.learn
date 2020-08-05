@@ -1,3 +1,6 @@
 * xref:index.adoc[Mahara]
 ** xref:concepts.adoc[Concepts]
 ** xref:operations.adoc[Operations]
+*** xref:create.adoc[Create]
+*** xref:share.adoc[Share]
+*** xref:engage.adoc[Engage]

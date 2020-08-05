@@ -1,3 +1,23 @@
 = Mahara operations
 
-In this section we will document key operations that you can do with Mahara
+The key operations in Mahara are split into three sections:
+
+[cols="1a,3a", options="header"] 
+|===
+|Area
+|Explanation
+
+
+|xref:create.adoc[Create]
+|All the actions relating to the creation of a learner's personal portfolios.
+
+* Creation and collection of artefacts 
+* Creation of pages and collections that the learner uses to share selected artefacts with other people.
+
+
+|xref:share.adoc[Share]
+|
+
+|xref:engage.adoc[Engage]
+|
+|===

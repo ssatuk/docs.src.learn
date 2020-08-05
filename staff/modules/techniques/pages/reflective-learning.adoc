@@ -1,0 +1,30 @@
+= Reflective Learning
+
+== Introduction
+
+Reflective practice is a key part of professional learning where both experience and knowledge are essential components of progression.
+
+There is a rich set of references to teacher education in the https://en.wikipedia.org/wiki/Reflective_practice#Teacher_educators[related Wikipedia article,role=external,window=_blank].
+
+
+== Models of reflective practice
+
+=== Gibbs Reflective Cycle
+
+Learning researcher Graham Gibbs discussed the use of structured debriefing to facilitate the reflection involved in Kolb's experiential learning cycle.
+
+image:Gibbs.png[]
+
+
+=== Schon - reflection in action
+
+Schon and Argyris coined the terms single-loop-learning and double-loop-learning to describe how practitioners respond to an error or other learning need. These concepts were further developed into the practices of _reflection-in-action_ and _reflection_after_action_ as summarised here:
+
+
+image:schon2.drawio.png[Schon - reflection before,during and after learning]
+
+== See also
+
+* Kolb, David A. (2015) [1984]. Experiential learning: experience as the source of learning and development (2nd ed.). Upper Saddle River, NJ: Pearson Education
+* Ramsey, Caroline. "Introducing Reflective Learning". Open University, 2006 (https://www.open.edu/openlearncreate/pluginfile.php/159274/mod_resource/content/3/Introducing%20Reflective%20learning%20Ramsey%2C%202006.pdf[pdf,role=external,window=_blank]).
+* Gibbs, Graham (1988). Learning by doing: a guide to teaching and learning methods (https://thoughtsmostlyaboutlearning.files.wordpress.com/2015/12/learning-by-doing-graham-gibbs.pdf[pdf,role=external,window=_blank])
