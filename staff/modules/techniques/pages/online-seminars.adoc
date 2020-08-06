@@ -15,6 +15,6 @@ All these collaboration tools have these features in common:
 
 == Breakout rooms
 
-xref:zoom:index.adoc[Zoom] offers Breakout Rooms (i.e. sub-meetings) as a native feature. To mimic this feature in Teams a  xref:officestaff:msteams:techniques/breakout-rooms-in-teams.adoc[Breakout rooms] workaroundTeam-based setup with multiple channels] would be needed.
+xref:zoom:index.adoc[Zoom] offers Breakout Rooms (i.e. sub-meetings) as a native feature. To mimic this feature in Teams a  xref:officestaff:msteams:techniques/breakout-rooms-in-teams.adoc[Breakout rooms] workaround (Team-based setup with multiple channels) would be needed.
 
 include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 
