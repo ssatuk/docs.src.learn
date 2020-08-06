@@ -40,5 +40,14 @@ xref:e-portfolio.adoc[e-Portfolios] are the perfect tool to support growing lear
 xref:discussion-forums.adoc[Discussion forums] are just one opportunity for our learners to exchange perspectives with each other in a safe professional  space.
 
 
+== See also
+
+* Connectivism as a learning theory, Stephen Downes, 2014 (https://halfanhour.blogspot.com/2014/04/connectivism-as-learning-theory.html[post])
+* Connectivism and Connective Knowledge, Essays on meaning and learning networks, Stephen Downes, 2012 (https://www.downes.ca/files/books/Connective_Knowledge-19May2012.pdf[pdf])
+* Connectivism: Design and Delivery of Social Networked Learning, George Siemens & Gráinne Conole, International Review of Research in Open and Distance Learning, 2011, (http://scholar.google.co.uk/scholar_url?url=http://www.irrodl.org/index.php/irrodl/article/download/994/1831/0&hl=en&sa=X&scisig=AAGBfm3XEhaS20ItEUQSf6Kco8mQvfM7Yg&nossl=1&oi=scholarr[pdf])
+ 
+
 include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 
+
+
 
