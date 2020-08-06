@@ -1,4 +1,17 @@
 = Asynchronous e-learning techniques
 
-TODO
+== Introduction
 
+Asynchronous techniques are those where learner work and contribution can happen at a time of their choosing, with no intrinsic need to align with other delegates or faculty. 
+
+This way of working is often more accessible because it is easier to fit around the learner's schedule. Deeper engagement with the material and the opportunity to reflect on progress are likely outcomes. On the downside, some speak of the greater risk of learners feeling isolated and then demotivated if there are only asynchronous activities.
+
+== Examples
+
+* xref:networked-learning.adoc[networked learning]
+* xref:e-portfolio.adoc[e-Portfolios]
+* xref:discussion-forums.adoc[discussion forums]
+
+
+
+include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 

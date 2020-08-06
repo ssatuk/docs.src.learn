@@ -1,1 +1,21 @@
 = Using Discussion Forums
+
+== Introduction
+
+Discussion forums provide an opportunity for delegates and faculty to engage in asynchronous conversation around relevant topics.
+
+NOTE: this needs to be fleshed out more, see note below about contributing ideas
+
+
+== Examples
+
+Our toolkit offers the following opportunities to use Discussion Forums:
+
+* in Discourse, either public or restricted
+* open or restricted discussion forums in xref:mahara:index.adoc[Mahara]
+* within individual xref:moodle:index.adoc[Moodle] courses
+* If a long-running group is configured as a Team in xref:officestaff:msteams:introduction.adoc[MS Teams] then the Team itself is a discussion forum
+
+
+include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 
+

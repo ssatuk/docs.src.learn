@@ -1,4 +1,16 @@
 = Synchronous e-learning techniques
 
-TODO
+== Introduction
+
+Synchronous approaches are those where the learners and faculty are all present at the same time.
+
+These techniques lend themselves to developing good group dynamics and cohesion, in part because communication tends to include less formal and more spontaneous elements. On the other hand synchronous delivery potentially makes material less accessible (because learners have to adjust their schedule to fit the delivery time) and the supervision and support makes them more expensive to deliver.
+
+== Examples
+
+* xref:online-seminars.adoc[online seminars]
+* xref:online-broadcasts.adoc[online broadcasts]
+
+include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 
+
 

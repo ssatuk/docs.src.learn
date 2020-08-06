@@ -1,0 +1,12 @@
+= Online Courses
+
+Online courses can and should mix both asynchronous and synchronous techniques.
+
+The key benefits of adding an online course to your delivery approach are:
+
+* a container for multiple resources and activities (both sync and async)
+* a way to pull together discussion within a cohort alongside material
+* a mechanism for grading and feedback if that is an important part of your service
+* easy to automate recognition for example certificates and digital badges
+
+include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 

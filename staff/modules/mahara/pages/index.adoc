@@ -2,7 +2,7 @@
 
 == What is Mahara?
 
-Mahara is a web application that provides a combination of an xref:techniques:e-portfolio.adoc[e-portfolio] and xref:techniques:social-learning.adoc[social networking / social learning] within defined groups.
+Mahara is a web application that provides a combination of an xref:techniques:e-portfolio.adoc[e-portfolio] and xref:techniques:networked-learning.adoc[networked learning] within defined groups.
 
 Within the rest of this documentation we will explore:
 

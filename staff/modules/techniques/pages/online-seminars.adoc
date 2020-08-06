@@ -1,0 +1,20 @@
+= Online seminars
+
+== Overview
+
+Online seminars make use of collaboration tools such as xref:officestaff:msteams:introduction.adoc[MS Teams] or xref:zoom:index.adoc[Zoom] to support live meetings with the learners and faculty. Input is potentially possible from all in attendance, although most tools allow the meeting organisers to mute delegate microphones and control who can share material.
+
+It's possible to use pre-recorded material but this has to be played live into the meeting by one of the organisers.
+
+All these collaboration tools have these features in common:
+
+* audio and video conferencing
+* sharing material from attendees, e.g. presentations, videos
+* a mechanism for indicating "hand raised"
+* a text chat side channel
+
+== Breakout rooms
+
+xref:zoom:index.adoc[Zoom] offers Breakout Rooms (i.e. sub-meetings) as a native feature. To mimic this feature in Teams a Team-based setup with multiple channels would be needed.
+
+include::userdoc:ROOT:partial$partial-request-for-material.adoc[] 
