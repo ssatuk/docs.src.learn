@@ -9,6 +9,8 @@ To share examples of your portfolio you need to create Pages (there's also a mor
 == Instructions
 
 * xref:examples/create-the-page.adoc[Create the page]
+* xref:examples/add-content-to-page.adoc[Add content to the page]
+* Share the page (to follow)
 
 
 
