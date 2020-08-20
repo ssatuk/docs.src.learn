@@ -7,7 +7,7 @@ The **Engage** menu area holds all parts of Mahara that you need to engage with 
 * people
 * setting up groups
 +
-NOTE: We do not currently permit users to create their own groups, that function is reserved for SSAT choice
+NOTE: We do not currently permit users to create their own groups, that function is reserved for SSAT 
 
 * working in a group
 * discussion topics
@@ -20,7 +20,7 @@ image::mahara-engage-menu.png[]
 
 == See also
 
-For full instructions see the {mahara-manual-url}engage.html[Mahara manual,role=external,window=_blank]
+* {mahara-manual-url}engage.html[Mahara manual,role=external,window=_blank]
 
 
 

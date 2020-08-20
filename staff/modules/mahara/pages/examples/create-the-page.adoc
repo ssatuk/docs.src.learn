@@ -1,0 +1,31 @@
+= Create a page
+
+Here are the basic instructions on how to create an empty page.
+
+* Via the Mahara main menu access Create / pages and collections
+
+image::mha-menu-pages.png[width=400]
+
+* add a new page
+
+image::mha-page-add-1.png[width=400]
+
+* choose page
+
+image::mha-page-add-2.png[width=400]
+
+* add a title (this will be visible to the people you share with)
+
+image::mha-page-add-title.png[width=400]
+
+* scroll down and click Save
+
+image::mha-save.gif[]
+
+
+NOTE: There are options to add tags, and even to auto-populate a page based on tags, but these are not needed for the simplest example.
+
+
+== Next
+
+Go to xref:examples/add-content-to-page.adoc[Add content to a page]

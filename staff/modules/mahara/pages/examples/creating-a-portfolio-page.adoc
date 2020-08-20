@@ -1,0 +1,18 @@
+= Sharing your work on a portfolio page
+
+== Context
+
+By default journal entries and artefacts you add to Mahara are private.
+
+To share examples of your portfolio you need to create Pages (there's also a more advanced form of portfolio called Collections - these are made up of multiple pages and are not covered in this introductory page)
+
+== Instructions
+
+* xref:examples/create-the-page.adoc[Create the page]
+
+
+
+== Further information
+
+
+* {mahara-manual-url}pages.html#add-a-page-and-edit-its-settings[Mahara manual - add a page,role=external,window=_blank]

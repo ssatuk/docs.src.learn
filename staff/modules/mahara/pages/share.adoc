@@ -17,7 +17,11 @@ After logging in to Mahara select the relevant item on the Share menu as shown:
 
 image::mahara-share-menu.png[] 
 
+== Examples
+
+* xref:examples/creating-a-portfolio-page.adoc[Share your portfolio on a page]
+
 == See also
 
-For full instructions see the {mahara-manual-url}share.html[Mahara manual,role=external,window=_blank]
+* {mahara-manual-url}share.html[Mahara manual,role=external,window=_blank]
 

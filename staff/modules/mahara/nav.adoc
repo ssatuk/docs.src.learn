@@ -6,3 +6,6 @@
 *** xref:engage.adoc[Engage]
 ** Examples
 *** xref:examples/creating-a-learning-journal.adoc[Create a learning journal]
+*** xref:examples/creating-a-portfolio-page.adoc[Share your portfolio on a page]
+**** xref:examples/create-the-page.adoc[Create the page]
+**** xref:examples/add-content-to-page.adoc[Add content to a page]
