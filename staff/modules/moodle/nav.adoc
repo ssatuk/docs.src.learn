@@ -1,1 +1,2 @@
 * xref:index.adoc[Moodle]
+** xref:change-user-role.adoc[Change user roles]
