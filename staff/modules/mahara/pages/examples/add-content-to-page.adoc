@@ -30,7 +30,18 @@ To add content drag the **Drag to add a new block** button image:mha-page-edit-a
 * Choose a content type 
 * Configure the content type
 
-NOTE: Detailed instructions for each content type are beyond the scope of this guide - please consult  {mahara-manual-url}portfolio/pages.html#add-content-to-a-page[the Mahara manual,window=_blank], watch the example video below, and don't be afraid to experiment!
+NOTE: Detailed instructions for each content type are beyond the scope of this guide - please consult  {mahara-manual-url}portfolio/pages.html#add-content-to-a-page[the Mahara manual,window=_blank], watch the demonstration example video below, and don't be afraid to experiment!
+
+== Demonstration video
+
+In this demonstration we see how to create a new page containing:
+
+* a single journal entry
+* an external RSS feed of links from Diigo
+* a Creative Commons licence block
+
+video::f2i63bwiV3I[youtube, width=600, height=400]
+
 
 
 == Further information
