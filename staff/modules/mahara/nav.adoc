@@ -4,3 +4,5 @@
 *** xref:create.adoc[Create]
 *** xref:share.adoc[Share]
 *** xref:engage.adoc[Engage]
+** Examples
+*** xref:examples/creating-a-learning-journal.adoc[Create a learning journal]

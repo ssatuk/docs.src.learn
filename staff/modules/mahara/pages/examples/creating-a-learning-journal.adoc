@@ -1,0 +1,49 @@
+= Creating a learning journal
+
+== Why keep a learning journal
+
+With any professional learning, the development of a portfolio is an incredibly useful tool to record reflections, new learning, resources and of course impact of your application to working practices.
+
+We recommend therefore that all participants in SSAT programmes develop a portfolio of evidence.
+
+Rather than arrive at the end of a training programme before compiling/curating your portfolio, we urge all learners to complete a learning journal and associated resources to a portfolio as they go.
+
+Mahara enables both a Learning Journal and wider portfolio of evidence and impact, to be curated as you work through a training programme.  In our online courses we include instructions to add to your learning journal at key points, but of course you can add more frequently if you wish. We suggest that at regular intervals, you review these journal entries and add specific pivot points (points where your learning has impacted directly on practice) to your portfolio.  
+
+You may also choose to add resources from training to your portfolio -this could include files from the programme, examples/artefacts from your application such as lesson plans, lesson activity resources or images of learning in action.
+
+== Keeping a learning journal
+
+Some things to bear in mind when thinking about reflecting on your professional learning in a journal:
+
+image::mha-journal-callout.drawio.png[]
+
+
+== Instructions
+
+* From the main Mahara menu select  Create / Journals
+
+image::mha-menu-journals.png[width=400]
+
+* create your first learning journal entry 
+
+image::mha-journal-new-entry.png[width=400]
+
+* edit the entry 
+
+image::mha-journal-edit-1.png[width=400]
+
+* select a licence and save
+
+image::mha-journal-edit-2.png[width=400]
+
+In this video Andy Williams walks through the basic process:
+
+video::qrfpuh-OnKU[youtube, width=600, height=400]
+
+NOTE: Learning journal entries are private until and unless you add them to a page and share that page (documentation to follow)
+
+== Further information
+
+* {mahara-manual-url}content/journal.html[Mahara manual entry - journals,role=external,window=_blank]
+

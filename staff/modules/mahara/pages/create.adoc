@@ -24,7 +24,11 @@ After logging in to Mahara select the relevant item on the Create menu as shown:
 
 image::mahara-create-menu.png[]
 
+== Examples
+
+* xref:examples/creating-a-learning-journal.adoc[Creating a learning journal]
+
 == See also
 
-For full instructions see the {mahara-manual-url}create.html[Mahara manual,role=external,window=_blank]
+* {mahara-manual-url}create.html[Mahara manual,role=external,window=_blank]
 
