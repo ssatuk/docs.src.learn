@@ -1,0 +1,43 @@
+= Sharing a page
+
+When you create a page in Mahara it remains private to you unless you explicitly share it with other people.
+
+In this guide we will cover three ways of sharing a pages with others:
+
+* sharing to a specific group of other Mahara users
+* making the page completely public
+* selective sharing outside of Mahara using a secret link
+
+== Sharing inside Mahara
+
+You would use this approach when you want to share a portfolio page with specific users, or a group of users, inside Mahara - for example to share with other delegates on a course
+
+Please view this video:
+
+video::ZKAnwGlgYQM[youtube, width=600, height=400]
+
+== Making a page public
+
+if you want you can make a page public so anyone can see it over the internet without having a login to our instance of Mahara. For example you might do this if you want to share it via social media or link from another public page you maintain such as a blog.
+
+Please view this video:
+
+video::E7HEqwoxKWw[youtube, width=600, height=400]
+
+
+== Sharing via a secret URL
+
+Sometimes you might want to share selectively outside Mahara without making a page fully public. 
+
+Mahara offers the ability to add a 'secret' link to a page. These are links which are made up of random letters and numbers so very hard to guess - you can then copy and paste the link into an email to the people you want to see it. Secret links are not indexed by Google.
+
+An example might be if you wanted to share something with your line manager, or perhaps show to a new employer. Secret URLs can be cancelled at any time.
+
+Please view this video for instructions:
+
+video::21mAdWOKYbQ[youtube, width=600, height=400]
+
+
+== Further information
+
+* {mahara-manual-url}portfolio/share.html#share[Mahara manual - share]
