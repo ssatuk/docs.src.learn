@@ -1,0 +1,26 @@
+= Engaging with other Mahara users
+
+== Overview
+
+The **Engage** menu area holds all parts of Mahara that you need to engage with other people. That can be through sharing your own portfolios, viewing other people's portfolios, and collaborating in groups.
+
+* people
+* setting up groups
++
+NOTE: We do not currently permit users to create their own groups, that function is reserved for SSAT 
+
+* working in a group
+* discussion topics
+
+== Access
+
+After logging in to Mahara select the relevant item on the Engage menu as shown:
+
+image::mahara-engage-menu.png[]
+
+== See also
+
+* {mahara-manual-url}engage.html[Mahara manual section "Engage",role=external,window=_blank]
+
+
+

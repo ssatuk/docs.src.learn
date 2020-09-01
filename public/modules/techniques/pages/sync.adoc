@@ -1,0 +1,14 @@
+= Synchronous e-learning techniques
+
+== Introduction
+
+Synchronous approaches are those where the learners and faculty are all present at the same time.
+
+These techniques lend themselves to developing good group dynamics and cohesion, in part because communication tends to include less formal and more spontaneous elements. On the other hand synchronous delivery potentially makes material less accessible (because learners have to adjust their schedule to fit the delivery time) and the supervision and support makes them more expensive to deliver.
+
+SSAT uses a mixture of tools for online seminars and broadcasts including
+
+* Zoom
+* Microsoft Teams
+
+Further details will be provided in joining instructions for any seminar

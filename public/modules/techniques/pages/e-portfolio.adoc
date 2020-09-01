@@ -1,0 +1,21 @@
+= Introduction to e-portfolios
+
+== e-Portfolios
+
+An academic e-portfolio is a digital collection of work relating to the subject being studied, typically containing both:
+
+* study output, such as writing, photos, videos, link curations etc
+* xref:reflective-learning.adoc[reflective writing] in which a student analyses their learning process and identifies changes they may want to make to how they are approaching a subject
+
+The key differences from material in a learning management system such as xref:moodle:index.adoc[Moodle] are ownership and control. In an e-portfolio system it is the learner who decides which material is shared, and typically an e-portfolio account will extend after a specific course has ended.
+
+An e-portfolio system such as xref:mahara:index.adoc[Mahara] also allows for interaction between learners and between learners and faculty, supporting a https://en.wikipedia.org/wiki/Social_learning_theory[Social Learning, role=external,window=_blank] aspect to development.
+
+As the content of the e-portfolio is under learner control this promotes learner agency and cross-subject learning, features which have been shown to improve learner engagement.
+
+
+== See also
+
+* ePortfolios Explained: Theory and Practice. Centre for Teaching Excellence, University of Waterloo retrieved from https://uwaterloo.ca/centre-for-teaching-excellence/teaching-resources/teaching-tips/educational-technologies/all/eportfolios
+
+* Bass, R and Eynon, B. ‘Capturing the Visible Evidence of Invisible Learning’: The Academic Commons, 2009. Retrieved from  https://web.archive.org/web/20100702230109/http://www.academiccommons.org/files/BassEynonCapturing.pdf

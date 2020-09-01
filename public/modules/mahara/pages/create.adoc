@@ -1,0 +1,34 @@
+= Creating your portfolio items
+
+== Overview
+
+The **Create** menu area contains all the actions relating to the creation of your personal portfolios.
+
+This includes the artefacts (or ‘learning evidence’) that you create or collect to be used in your portfolios. It also includes the pages and collections that hold your artefacts for you to share with other people.
+
+You can only share artefacts with individuals or groups of people when you placed them on a page and give others the permission to view that portfolio. The page can be part of a collection.
+
+Within this menu area you can access:
+
+* Pages and collections
+* Files
+* Journals
+* Notes
+* Plans
+* Resume
+* Tags
+
+== Access
+
+After logging in to Mahara select the relevant item on the Create menu as shown:
+
+image::mahara-create-menu.png[]
+
+== Examples
+
+* xref:examples/creating-a-learning-journal.adoc[Creating a learning journal]
+
+== See also
+
+* {mahara-manual-url}create.html[Mahara manual,role=external,window=_blank]
+

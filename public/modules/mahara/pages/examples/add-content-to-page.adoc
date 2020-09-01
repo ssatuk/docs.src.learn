@@ -1,0 +1,49 @@
+= Adding content to a page
+
+In xref:examples/create-the-page.adoc[Create a Page] you created an empty page.
+
+In this section you will learn how to add content from your portfolio and/or external sources to build up a page you can use to present a piece of learning, a project status etc.
+
+== Access the page edit screen
+
+If you clicked Save after xref:examples/create-the-page.adoc[creating a page] you will have been redirected to the page editing screen.
+
+If you are re-editing an existing page then you get here by viewing the page and clicking the pencil icon in the top right group of controls
+
+image::mha-page-edit.gif[]
+
+== Editing page content
+
+The page navigation bar stays fixed in place on the right-hand side of the screen. That way, the buttons can be accessed on short and long pages without scrolling.
+
+image::mha-page-edit-controls.png[]
+
+. Drag the **Drag to add a new block** button  onto the page to place a conten block.
+. Click the **Settings** button  to add and modify page settings like title and description and skin.
+. Click the **Display page** button  to review your page to see how others, who have access to it, will see it. When you are in edit mode, this button is highlighted.
+. Click the **Share button**  to control who has access to the page
+. Click the **Return** button to return to the pages and collections overview page.
+
+To add content drag the **Drag to add a new block** button image:mha-page-edit-add-block.png[] onto the page surface - this will create a placeholder block and open the block configuration screen.
+
+* Give the block a sensible display name
+* Choose a content type 
+* Configure the content type
+
+NOTE: Detailed instructions for each content type are beyond the scope of this guide - please consult  {mahara-manual-url}portfolio/pages.html#add-content-to-a-page[the Mahara manual,window=_blank], watch the demonstration example video below, and don't be afraid to experiment!
+
+== Demonstration video
+
+In this demonstration we see how to create a new page containing:
+
+* a single journal entry
+* an external RSS feed of links from Diigo
+* a Creative Commons licence block
+
+video::f2i63bwiV3I[youtube, width=600, height=400]
+
+
+
+== Further information
+
+* {mahara-manual-url}portfolio/pages.html#add-a-page-and-edit-its-settings[Mahara manual  - edit a page,role=external,window=_blank]

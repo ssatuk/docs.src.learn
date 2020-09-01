@@ -1,5 +1,9 @@
 name: elearn
-title: e-Learning Platform Overview
+title: e-Learning Platforms
 version: '1.0'
+asciidoc: 
+  attributes: 
+    mahara-manual-url: https://manual.mahara.org/en/20.04/
 nav:
 - modules/ROOT/nav.adoc
+- modules/mahara/nav.adoc

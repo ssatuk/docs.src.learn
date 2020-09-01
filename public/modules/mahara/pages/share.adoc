@@ -1,0 +1,27 @@
+= Sharing your portfolio with others
+
+== Overview
+
+The **Share** menu area holds all parts of Mahara that allow you to share your own portfolios with others and to view the portfolios of other people that have accounts on the site.
+
+Within this menu area you can access:
+
+* Edit access for items shared by you with other users
+* Edit access to your profile page
+* Edit access for items shared by you publicly
+* See items shared with you by others
+
+== Access
+
+After logging in to Mahara select the relevant item on the Share menu as shown:
+
+image::mahara-share-menu.png[] 
+
+== Examples
+
+* xref:examples/creating-a-portfolio-page.adoc[Share your portfolio on a page]
+
+== See also
+
+* {mahara-manual-url}share.html[Mahara manual section "Share",role=external,window=_blank]
+

@@ -1,5 +1,5 @@
 = SSAT e-Learning Platforms
 
-A guide for users.
+SSAT uses a range of technologies to support online delivery of professional development.
 
-To follow...
+In this section we augment the vendor help files with specific guides on features you may need when participating in SSAT programmes.

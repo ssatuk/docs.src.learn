@@ -1,0 +1,21 @@
+= Mahara Overview
+
+== What is Mahara?
+
+Mahara is a web application that provides a combination of an **e-portfolio**  and **networked learning** within defined groups.
+
+Within the rest of this documentation we will explore:
+
+* xref:concepts.adoc[basic Mahara concepts]
+* xref:operations.adoc[Mahara operations]
+* Examples of how to use Mahara
+** xref:examples/creating-a-learning-journal.adoc[Creating a learning journal]
+** xref:examples/creating-a-portfolio-page.adoc[Sharing your portfolio on a page]
+
+== SSAT instance of Mahara
+
+Our implementation of Mahara is available at https://myportfolio.ssat.cloud[https://myportfolio.ssat.cloud,role=external,window=_blank] 
+
+== Further information
+
+{mahara-manual-url}intro/introduction.html[See the introduction to the Mahara online manual,role=external,window=_blank]

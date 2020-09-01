@@ -1,0 +1,23 @@
+= Mahara operations
+
+The key operations in Mahara are split into three sections:
+
+[cols="1a,3a", options="header"] 
+|===
+|Area
+|Explanation
+
+
+|xref:create.adoc[Create]
+|All the actions relating to the creation of a learner's personal portfolios.
+
+* Creation and collection of artefacts 
+* Creation of pages and collections that the learner uses to share selected artefacts with other people.
+
+
+|xref:share.adoc[Share]
+|All the actions relating to sharing your own portfolios with others and to view the portfolios of other people that have accounts on the site
+
+|xref:engage.adoc[Engage]
+|All parts of Mahara that you need to engage with other people. That can be through sharing your own portfolios, viewing other people’s portfolios, and collaborating in groups
+|===

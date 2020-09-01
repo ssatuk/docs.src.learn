@@ -1,0 +1,35 @@
+= An introduction to e-Learning Techniques
+
+In this section we start with a tool-agnostic view and look at different techniques that can be used to work remotely with learners. We then go on to link these to specific tools so that you can see what choices may be available.
+
+== Classifying e-learning techniques by Cardinality and use of Time
+
+One way to classify e-learning techniques is to think about how many learners are involved in the activity, and whether the activity takes place in real time (**synchronously**) or at a time to suit the individual learner (**asynchronously**), for example:
+
+image::e-learning-cardinality-v-time.png[]
+
+== Comparison of asynchronous and synchronous techniques
+
+There's a vast literature on the comparative benefits of synchronous and asynchronous learning approaches. A few highlights are shown in this table:
+
+
+|===
+|Approach|Benefits|Disbenefits
+
+|Asynchronous
+a|* supports deeper engagement with material
+* supports reflective learning
+* more accessible - flexible with respect to other learner commitments
+* cheaper to operate
+a|* risk of demotivation
+* risk of isolation
+
+|Synchronous
+a|* greater sense of group cohesion - good for group-forming activities
+* greater learner motivation
+a|* Higher cost to operate
+
+|===
+
+
+It's likely that for most learning activities a blended approach will be needed. In the next section we explore specific xref:async.adoc[asynchronous] and xref:sync.adoc[synchronous] approaches and map them to the different tools available.
