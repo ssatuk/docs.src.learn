@@ -1,6 +1,0 @@
-* xref:index.adoc[Techniques and Patterns]
-** xref:networked-learning.adoc[Networked Learning]
-** xref:async.adoc[Asynchronous Approaches]
-*** xref:e-portfolio.adoc[e-Portfolios]
-** xref:sync.adoc[Synchronous Approaches]
-** xref:online-course.adoc[Online Courses]
