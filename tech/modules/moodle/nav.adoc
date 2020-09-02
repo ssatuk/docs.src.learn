@@ -1,6 +1,16 @@
 * xref:index.adoc[Moodle Technical Overview]
 ** xref:configuration/index.adoc[Moodle Configuration]
 *** xref:configuration/webservices.adoc[Moodle Web Services]
-** xref:development/index.adoc[Moodle Development]
+** Moodle Development
+*** xref:development/index.adoc[Introduction]
+*** xref:development/repos.adoc[Code repositories]
+*** xref:development/branching.adoc[Use of code branches]
+*** xref:development/scenarios.adoc[Specific scenarios]
+*** xref:development/running_locally.adoc[Local development]
+*** xref:development/testing.adoc[Testing]
+*** xref:development/references.adoc[Other sources of information]
+
+
+
 
 

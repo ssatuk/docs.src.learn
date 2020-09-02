@@ -1,0 +1,132 @@
+= Code Repositories
+
+== Overview
+
+NOTE: This information needs updating to take account of our Vagrant setup for local development
+
+Our approach to managing Moodle is based around multiple interlinked Git repositories. The relationship at the top-level (Moodle itself) is shown in this diagram.
+
+.Moodle top level repositories
+image::moodle-repos-01.png[]
+
+[options = "header" cols="2,1,2,1"]
+|===
+|Repository
+|Location
+|Purpose
+|Link
+
+
+|ssat/moodle
+|Bitbucket
+|SSAT Moodle master, including all our customisations
+|https://bitbucket.org/ssat/moodle/src/master/[Bitbucket]
+
+|moodle/moodle
+|GitHub
+|Moodle core
+|https://github.com/moodle/moodle[GitHub]
+
+|ssatuk/moodle
+|GitHub
+|Forked from moodle/moodle this is the route we would contribute bug fixes back to Moodle core team
+|https://github.com/ssatuk/moodle[GitHub]
+
+
+|Clone of ssat/moodle
+|Developer workstation
+|Local copy of code
+|origin of this points to `git@bitbucket.org:ssat/moodle.git`
+
+|Clone of ssat/moodle
+|Moodle server
+|Deployed code - usually from ssat-deployment branch
+|origin of this points to `git@bitbucket.org:ssat/moodle.git`
+
+|===
+
+We have similar repository setups for any third-party plugins we add to our build:
+
+.Moodle submodule repository relationships
+image::moodle-repos-02.png[]
+
+NOTE: Sub-module list needs to be updated. For definitive answer check the code!
+
+The sub-modules in use are:
+
+[options = "header" cols="2,2,1,1,1"]
+|===
+|Name
+|Purpose
+|SSAT master
+|Origin
+|Contrib
+
+|webservice_restful
+|RESTful API
+|https://bitbucket.org/ssat/moodle-webservice_restful/src/master/[BitBucket]
+|https://github.com/catalyst/moodle-webservice_restful[GitHub]
+|https://github.com/ssatuk/moodle-webservice_restful[GitHub]
+
+|tool_trigger
+|Fire external webhook in response to Moodle events
+|https://bitbucket.org/ssat/moodle-tool_trigger/src/master/[BitBucket]
+|https://github.com/catalyst/moodle-tool_trigger[GitHub]
+|https://github.com/ssatuk/moodle-tool_trigger[GitHub]
+
+|tool_objectfs
+|Add external filesystems
+|https://bitbucket.org/ssat/moodle-tool_objectfs/src/master/[BitBucket]
+|https://github.com/catalyst/moodle-tool_objectfs[GitHub]
+|https://github.com/ssatuk/moodle-tool_objectfs[GitHub]
+
+|local_azure_storage
+|Azure storage interface for tool_objectfs
+|https://bitbucket.org/ssat/moodle-local_azure_storage/src/master/[BitBucket]
+|https://github.com/catalyst/moodle-local_azure_storage[GitHub]
+|https://github.com/ssatuk/moodle-local_azure_storage[GitHub]
+
+|local_aws
+|AWS S3 interface for tool_objectfs
+|https://bitbucket.org/ssat/moodle-local_aws/src/master/[BitBucket]
+|https://github.com/catalyst/moodle-local_aws[GitHub]
+|https://github.com/ssatuk/moodle-local_aws[GitHub]
+
+|enrol_stripepayment
+|Stripe payment option
+|https://bitbucket.org/ssat/moodle-enrol_stripepayment/src/master/[BitBucket]
+|https://github.com/dualcube/moodle-enrol_stripepayment[GitHub]
+|https://github.com/ssatuk/moodle-enrol_stripepayment[GitHub]
+
+
+|===
+
+== Setting up local clone
+
+To start developing locally run the following
+
+[source,shell]
+----
+> git clone git@bitbucket.org:ssat/moodle.git
+> git submodule update --recursive
+----
+
+If you are also going to be pulling in Moodle updates to either update our fork of Moodle, or to do integration work (updating our changes to work with a later version of Moodle). then you also need to do:
+
+[source,shell]
+----
+> git remote add upstream https://github.com/moodle/moodle.git
+----
+
+If you are going to be contributing bugfixes back to the Moodle community you also need a remote for our Github fork of the upstream:
+
+[source,shell]
+----
+> git remote add contrib https://github.com/ssatuk/moodle.git
+----
+
+== Adding a new plugin to our build
+
+1. locate the github repository for the plugin - this is our **upstream**
+2. fork the repository in Github into a new repository under the `ssatuk` organisation - this becomes **origin**
+3. follow the instructions to <<section-start-submodule,add the plugin to main repository>>

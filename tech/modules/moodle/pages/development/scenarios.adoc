@@ -1,0 +1,239 @@
+= Specific Branching Scenarios
+
+NOTE: we always start feature or integration branches from a major version tag (e.g. v3.7.0) to facilitate later version upgrade
+
+[[section-fetch-upstream]]
+== Updating our copies of Moodle source
+
+Periodically we need to update our repositories from the upstream source.
+
+First, make sure your local copy of Moodle has the correct remotes:
+
+[source,shell]
+----
+$ git remote -v
+
+contrib git@github.com:ssatuk/moodle.git (fetch)
+contrib git@github.com:ssatuk/moodle.git (push)
+origin  git@bitbucket.org:ssat/moodle.git (fetch)
+origin  git@bitbucket.org:ssat/moodle.git (push)
+upstream        https://github.com/moodle/moodle.git (fetch)
+upstream        https://github.com/moodle/moodle.git (push)
+
+----
+
+If any are missing use `git remote add`
+
+Then run the following in a Git Bash shell:
+
+[source,shell]
+----
+#!/bin/bash
+   git fetch upstream
+   for BRANCH in MOODLE_{36..37}_STABLE master; do
+       git push origin refs/remotes/upstream/$BRANCH:refs/heads/$BRANCH
+       git push contrib refs/remotes/upstream/$BRANCH:refs/heads/$BRANCH
+   done
+----
+
+This won't alter the local working copy, but will copy all upstream updates into our origin and contrib repositories
+
+[[section-starting-from-scratch]]
+== Starting branch structure for development
+
+NOTE: This has already been done in our repository, included for completeness
+
+1. Determine starting Moodle major version, e.g. v3.7.0
+2. create a new integration branch from the starting tag of that version
++
+`git branch -b ssat-3.7.0-integration v3.7.0`
++
+3. merge in features as required
+
+[[section-start-feature]]
+== Starting development on a feature
+
+_this is for a feature that changes Moodle core - see later for adding plugins_
+
+1. Determine starting Moodle major version, e.g. v3.7.0
+2. create a new feature  branch from the starting tag of that version
++
+`git branch -b ssat-3.7.0-feature-myfeature v3.7.0`
++
+3. develop feature
+4. for integration, see steps 3 onwards of <<section-update-local-feature,Updating a local feature>>
+
+[[section-start-submodule]]
+== Bringing in a new plugin (submodule)
+
+1. determine starting Moodle major version, e.g. v3.7.0
+2. create branch to hold the work for bringing in the submodule
++
+`git branch -b ssat-3.7.0-plugin-example_plugin`
++
+3. make sure we have a <<section-add-plugin-repo,Bitbucket repo for our origin>>.
+4. in the root of our local copy of Moodle
++
+`git submodule add CLONE_URL_OF_ORIGIN LOCAL_SUBMODULE_PATH`
+_NB: most plugins have a specific location defined in their documentation, be sure to use that for LOCAL_SUBMODULE_PATH_
++
+5. change directory into the plugin
+6. if we need a specific commit to work with our version, use `git checkout` to make sure we are at that point
+7. change directory to root of our Moodle
+8. run `git status` - should have changes to `.gitmodules` and the subdirectory where the plugin lives
+9. stage just those changes with `git add`
+10. commit and push to origin
+
+[[section-update-local-feature]]
+== Updating a local feature
+
+1. checkout the feature branch
++
+`git checkout ssat-3.7.0-feature-myfeature`
++
+2. make sure we have any changes made by others in our team
++
+`git fetch origin`
++
+`git rebase origin/ssat-3.7.0-feature-myfeature`
++
+3. make changes and commit them
++
+`git add -pi myfile.php`
++
+`git commit -m"JIRA_REF my useful commit message"`
++
+4. push to origin
++
+`git push origin origin/ssat-3.7.0-feature-myfeature`
++
+5. Checkout integration branch
++
+`git checkout ssat-3.7.0-integration`
++
+6. make sure it is up to date
++
+`git rebase origin/ssat-3.7.0-integration`
++
+7. merge in our changes to our feature
++
+`git merge origin/ssat-3.7.0-feature-myfeature`
++
+8. push back to origin
++
+`git push origin origin/ssat-3.7.0-integration`
++
+
+
+[[section-integrate-minor-version-update]]
+== Integrating a minor version update of Moodle core
+__for example from v3.7.0 to v3.7.1__
+
+
+1. Run process for <<section-fetch-upstream,updating from upstream>>
+2. checkout our integration branch
++
+`git checkout ssat-3.7.0-integration`
++
+3. make sure we are up to date with changes from colleagues
++
+`git fetch origin`
++
+`git rebase origin/ssat-3.7.0-integration`
++
+4. fetch the minor update tag
++
+`git fetch upstream refs/tags/3.7.1:refs/tags/3.7.1`
++
+5. merge the minor update tag
++
+`git merge v3.7.1`
++
+6. resolve any merge conflicts
+7. push updated integration branch
++
+`git push origin ssat-3.7.0-integration`
++
+
+
+NOTE: we keep the same major base version in our branch name, because the branch started from that major version
+
+
+[[section-integrate-major-version-update]]
+== Integrating a major version update of Moodle core
+__for example from v3.7.0 to v3.8.0__
+
+
+1. Run process for <<section-fetch-upstream,updating from upstream>>
+2. fetch the major update tag
++
+`git fetch upstream refs/tags/3.8.0:refs/tags/3.8.0`
++
+3. create new integration branch
++
+`git branch -b ssat-3.8.0-integration v3.8.0`
++
+4. for each feature follow the instructions for <<section-feature-major-version-update,updating feature to new major version>>
+5. for each feature plugin the instructions for <<section-plugin-major-version-update,updating plugin to new major version>>
+6. merge all the new feature and plugin branches into our integration branch
+7. push to origin
++
+`git push origin ssat-3.8.0-integration v3.8.0`
++
+
+
+[[section-feature-major-version-update]]
+== Updating feature to new major version
+The strategy here is to keep the change history of our local development but avoid cluttering the branch with lots of unnececssary merges.
+
+The technique makes use of `git rebase --onto newbase oldbase`
+__(a good explanation of this command is in this https://content.pivotal.io/blog/git-rebase-onto[blog post] )__
+
+1. create a new branch for the feature based on the old one
++
+`git checkout -b ssat-3.8.0-feature-myfeature ssat-3.7.0-feature-myfeature`
++
+2. rebase onto the new master version
++
+`git rebase --onto v3.8.0 v3.7.0`
++
+3. resolve any merge conflicts
+4. push to origin
++
+`git push -u origin ssat-3.8.0-feature-myfeature`
++
+
+
+
+[[section-plugin-major-version-update]]
+== Updating plugin to new major version
+To allow for the possibility that we may have modified third-party code we seek to keep all change history for plugins too
+
+1. create a new branch for the feature based on the old one
++
+`git checkout -b ssat-3.8.0-plugin-example_plugin ssat-3.7.0-plugin-example_plugin`
++
+2. rebase onto the new major version
++
+`git rebase --onto v3.8.0 v3.7.0`
++
+3. change directory into the submodule
++
+`cd LOCAL_SUBMODULE_PATH`
++
+4. get all upstream changes
++
+`git pull upstream master`
++
+`git push origin`
++
+5. change back to the moodle root
+6. stage changes to `.gitmodules` and `LOCAL_SUBMODULE_PATH`
+7. git commit
+8. push to origin
++
+`git push -u origin ssat-3.8.0-plugin-example_plugin`
++
+
+
+

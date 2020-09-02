@@ -1,0 +1,46 @@
+= Running local development server
+
+WARNING: This is out of date, we have an improved vagrantfile repo available, notes to be updated
+
+1. install https://www.virtualbox.org/wiki/Downloads[Virtualbox] 
+2. install https://www.vagrantup.com/docs/installation/[Vagrant]
+3. install https://windows.php.net/download/[php] on your machine (this is only needed for the workaround in 6 below)
+4. install custom configuration, running in a Git Bash shell with admin privileges:
++
+----
+mkdir ~/vagrant
+cd ~/vagrant
+git clone git@github.com:ssatuk/moodle-vagrant.git 
+git checkout v2
+cd ./moodle-vagrant
+vagrant up --provision
+----
++
+5. wait a while - get a cup of coffee!
+6. because of Timeout restrictions while provisioning the Vagrant VM, we don't clone the moodle code into the newly created site, so you need to do the following:
++
+----
+cd ~/vagrant/moodle-vagrant  #adjust to suit your location
+vagrant ssh  #this logs into the VM
+cd /srv/www/ssatmoodle
+git clone git@bitbucket.org:ssat/moodle.git htdocs  #get coffee!
+cd htdocs
+git checkout ssat-3.7.0-integration
+git submodule update --recursive
+----
++
+7. To finish installing moodle:
++
+----
+# still while SSH'd in to the VM
+cd /srv/www/ssatmoodle/htdocs
+sudo -u www-data /usr/bin/php admin/cli/install.php --lang=en --wwwroot=http://ssatmoodle.test --dataroot=/srv/moodledata/ssatmoodle --dbname=ssatmoodle --dbuser=moodle --dbpass=moodle --adminpass=root --adminemail=nobody@nowhere.com --fullname="Moodle Dev" --shortname=ssatmoodle --dbtype=mariadb --non-interactive --agree-license
+
+exit #log out of VM
+----
++
+8. Visit http://ssatmoodle.test in your browser and you should see Moodle
+9. Normal development - because of Vagrant shared folders you can work with code editing and git in `~/vagrant/moodle-vagrant/www/ssatmoodle/htdocs` and the changes are reflected in the directory the VM serves moodle content from 
+
+
+

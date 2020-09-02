@@ -1,3 +1,28 @@
 = Moodle Development
 
-to follow
+== Overview
+
+SSAT operate an online Learning Management System based on https://moodle.org[Moodle].
+
+Development of a system that fits our purposes, and integrates with our other systems, requires that the core system is extended and customised, through a combination of the following strategies:
+
+* selection and deployment of third-party plugins
+* development and integration of SSAT-authored plugins
+* modifications to third-party plugins
+* modifications to Moodle core
+
+Moodle is a highly complex application and it's essential that any modifcations  we carry out can be added or removed from our deployed software in a managed way.
+
+Moodle is upgraded regularly both in terms of feature releases and an ongoing series of bug fixes - we need to manage our overall codebase so that we can update to new versions of Moodle in a planned and reversible way.
+
+Our LMS is a  customer-facing application, underpinning services that are sold,  so we must treat it as an essential service.
+
+== Audience
+
+This documentation is aimed at the following audiences:
+
+[cols="1,2"]
+|===
+|Developers
+|Procedures to follow when developing and extending the SSAT Moodle
+|===

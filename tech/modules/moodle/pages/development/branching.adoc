@@ -1,0 +1,203 @@
+= Moodle and Git
+[[section-moodle-releases]]
+== Moodle core release train
+
+To understand how the core Moodle team use branches, and by extension how we use them, you need to understand a little about the upstream development process. Moodle is under continual development by the core team, on the following schedule:
+
+[options = "header" cols="1,1,1,1"]
+|===
+
+|Release type
+|Example
+|Frequency
+|Phasing
+
+|Major
+|3.7
+|Twice per year
+|May, Nov
+
+|Minor
+|3.6.1
+|Six times per year
+|Jan, Mar, May, Jul, Sep, Nov
+
+|Bugfix
+|Weekly release 3.6.4+
+|Weekly
+|Thursday
+
+|===
+
+
+For further background see also:
+
+* https://docs.moodle.org/dev/Releases[Detailed Moodle release list]
+* https://docs.moodle.org/dev/Process[Moodle Core team development process]
+* https://docs.moodle.org/dev/Release_process[Moodle Release process]
+
+
+== How Moodle core team use branches and tags
+[[section-moodle-branches]]
+=== Branches
+
+These are (some of) the branches you will find in the repository that have originated from the upstream:
+
+[options = "header" cols="1,2,2"]
+|===
+|Branch
+|Purpose
+|Comment
+
+|master
+|Ongoing Moodle development by core team
+|The only thing we EVER do with master is to fetch from upstream (them) and push to origin (us). 
+
+
+|MOODLE_XX_STABLE
+|Current stable release of Moodle, e.g. MOODLE_36_STABLE is the latest stable state of 3.6 (including minor releases such as 3.6.1 )
+|The only things we EVER do with MOODLE_XX_STABLE branches is to fetch from upstream (them) and push to origin (us), and merge bug fixes from them into our integration branches. 
+
+|===
+
+[[section-moodle-tags]]
+=== Tags
+
+The Moodle core team adds a tag every time a new major (3.X) or minor (3.X.Y) version is released. 
+
+So for example if you look at the MOODLE_36_STABLE branch you might see something like this (arrow points to parent, as that is how the Directed Acyclic Graph inside git  works):
+
+////
+to build the graph you need this code, see https://jsfiddle.net/julianelve/qky2t59o/51/
+
+----
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Load the JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+</head>
+<body>
+  <!-- DOM element in which we'll mount our graph -->
+  <div id="graph-container"></div>
+  </body>
+----
+
+----
+/ Get the graph container HTML element.
+    const graphContainer = document.getElementById("graph-container");
+
+    // Instantiate the graph.
+    const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+    	orientation: "vertical",
+      template: "blackarrow",
+      reverseArrow: true,
+      commitDefaultOptions: {
+      		author:"Me"
+      } ,
+      
+    });
+
+    // Simulate git commands with Gitgraph API.
+    const m36 = gitgraph.branch("MOODLE_36_STABLE");
+    m36.commit({subject:"3.6 release", author:"a_dev"}).tag("v3.6.0")
+    	.commit({subject:"A bugfix", author:"a_dev"})
+    	.commit({subject: "weekly release 3.6.0+", author:"another"})
+    	.commit({subject:"minor change", author:"another"})
+    	.commit({subject: "weekly release 3.6.0+", author:"another"})
+    	.commit({subject: "Moodle release 3.6.1", author:"another"}).tag("v3.6.1")
+    	.commit({subject: "bugfix", author:"me"});
+----
+////
+
+.Moodle core tagging on stable branch
+image::moodle-branch-1.png[]
+
+When the core team start work on a new major release they branch from the start of the previous release:
+
+////
+see https://jsfiddle.net/julianelve/pbwqh0tg/11/
+----
+// Get the graph container HTML element.
+    const graphContainer = document.getElementById("graph-container");
+
+    // Instantiate the graph.
+    const gitgraph = GitgraphJS.createGitgraph(graphContainer, {
+    	orientation: "vertical",
+      template: "blackarrow",
+      reverseArrow: true,
+      //mode: "compact",
+      commitDefaultOptions: {
+      		author:"Me"
+      } ,
+      
+    });
+
+    // Simulate git commands with Gitgraph API.
+    const m36 = gitgraph.branch("MOODLE_36_STABLE");
+    m36.commit({subject:"3.6 release", author:"a_dev"}).tag("v3.6.0")
+    const m37 = gitgraph.branch("MOODLE_37_STABLE")
+    
+    m36.commit({subject:"A bugfix", author:"a_dev"})
+    	.commit({subject: "weekly release 3.6.0+", author:"another"})
+    	.commit({subject:"minor change", author:"another"})
+    	.commit({subject: "weekly release 3.6.0+", author:"another"})
+    	.commit({subject: "Moodle release 3.6.1", author:"another"}).tag("v3.6.1")
+    	.commit({subject: "bugfix", author:"me"});
+    
+    m37.commit({subject:"A feature", author:"a_dev"})
+       .commit({subject:"A cherry-pick", author:"a_dev"})
+       .commit({subject:"Final integration", author:"a_dev"})
+       .commit({subject:"Moodle release 3.7.0", author:"a_dev"}).tag("v3.7.0")
+    
+    
+
+
+----
+
+////
+
+.Moodle core starting new major release
+image::moodle-branch-2.png[]
+
+
+== SSAT Branches and Tags
+
+[[section-ssat-branches]]
+=== Branches
+
+[options = "header" cols="1,1,1"]
+|===
+|Branch
+|Purpose
+|Comment
+
+|ssat-X.Y.Z-deployment
+|SSAT deployment branch
+|This is the branch we deploy onto the production server. It should only ever point at tested working code.
+
+
+|ssat-X.Y.Z-integration
+|SSAT integration branch  based on Moodle vX.Y.Z
+|This branch is where we assemble the next release
+
+|ssat-X.Y.Z_[change_type]-[frankenstyle]
+|Branch containing a specific change, based on Moodle vX.Y.Z. This will be merged into the relevant integration branch.
+|For example `ssat_3.6.0_plugin-webservice_restful` is where we add the submodule containing `moodle-webservice_restful` plugin
+
+|===
+
+NOTE:For an explanation of **Frankenstyle** see the https://docs.moodle.org/dev/Frankenstyle[Moodle Docs]
+
+[[section-ssat-tags]]
+=== Tags
+
+We use tags to define SSAT release points, for example:
+
+----
+ssat-v3.6.0-0
+ssat-v3.6.0-1
+ssat-v3.6.0-2
+----
+
+

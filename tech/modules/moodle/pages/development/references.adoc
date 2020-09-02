@@ -1,0 +1,4 @@
+= Other sources of information
+
+Branching model::
+The branching model is based on  http://thamblings.blogspot.com/2013/07/upgrading-moodle-from-git.html[Upgrading Moodle from Git] by https://github.com/andrewnicols/[Andrew Nicols] 
