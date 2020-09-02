@@ -4,4 +4,4 @@ version: '1.0'
 nav:
 - modules/ROOT/nav.adoc
 - modules/moodle/nav.adoc
-- modules/infrastructure/nav.adoc
+- modules/architecture/nav.adoc

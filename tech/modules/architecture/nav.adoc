@@ -1,2 +1,2 @@
-* xref:index.adoc[e-Learning Infrastructure Overview]
+* xref:index.adoc[e-Learning Architecture Overview]
 ** xref:0.1@elearn-tf:ROOT:index.adoc[Infrastructure - Terraform]
