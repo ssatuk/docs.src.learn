@@ -1,4 +1,6 @@
 * xref:index.adoc[Moodle Technical Overview]
 ** xref:configuration/index.adoc[Moodle Configuration]
 *** xref:configuration/webservices.adoc[Moodle Web Services]
+** xref:development/index.adoc[Moodle Development]
+
 
