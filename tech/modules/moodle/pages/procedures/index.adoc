@@ -1,0 +1,11 @@
+= Moodle maintenance procedures
+
+== Prerequisites
+
+Please ensure your workstation is xref:ROOT:workstation-requirements.adoc[configured correctly] before starting to work on these services.
+
+All command examples assume you are running in Git Bash (Windows) or Bash (Mac/Linux)
+
+== Detailed Procedures
+
+* xref:procedures/moodle-upgrade.adoc[Upgrade Moodle on server]

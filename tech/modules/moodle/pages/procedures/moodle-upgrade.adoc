@@ -1,0 +1,16 @@
+= Upgrade Moodle software
+
+1. Ensure changes are all committed to branch `{mdl-deployment-branch}` and pushed
+2. https://mylearning.ssat.cloud/login/index.php?ssat_bypass_sso=true[Log in to Moodle on the web as admin] 
+3. Check no current users and https://mylearning.ssat.cloud/admin/settings.php?section=maintenancemode[enable maintenance mode]
+4. SSH in to the server
+5. Go to Moodle directory, pull changes:
++
+[source,shell,subs="attributes"]
+----
+ssatuk@web01 ~ $ cd /opt/moodle
+ssatuk@web01 /opt/moodle ({mdl-deployment-branch})$ sudo git pull origin {mdl-deployment-branch} && git submodule update --init
+----
+6. In web browser go to admin home, you will be prompted for an update key which is **SS@T142**
+7. Follow the upgrade process in the browser
+8. If all is good, https://mylearning.ssat.cloud/admin/settings.php?section=maintenancemode[unlock maintenance mode].

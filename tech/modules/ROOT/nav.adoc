@@ -1,1 +1,2 @@
 * xref:index.adoc[Introduction]
+** xref:workstation-requirements.adoc[Developer workstation setup]

@@ -1,10 +1,14 @@
 = SSAT e-Learning Platforms
 
-Lorem Ipsum blah
+This section of the documentation covers the following elements of our e-Learning provision:
 
-This is version *{page-component-version}* of the  guide.
+* Moodle installation
+* Mahara installation
+* Cloud resource deployment
+* Server software installation
 
-== Page source
+Please ensure your workstation is xref:workstation-requirements.adoc[configured correctly] before starting to work on these services.
 
-Source:  [.path]_tech/modules/ROOT/pages_.
-Repo: [page-origin-url]
+All command examples assume you are running in Git Bash (Windows) or Bash (Mac/Linux)
+
+

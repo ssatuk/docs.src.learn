@@ -1,0 +1,47 @@
+= Workstation requirements
+
+== Software
+
+
+* Git for your operating system
+* Virtualbox
+* Vagrant
+* Visual Studio Code
+
+== Configuration
+
+* a Github account
+* a Bitbucket account
+* an SSH key pair configured for use with Git and your GitHub and BitBucket accounts
+
+You also need copies of the specific SSH keys we use with our server-side resources:
+
+1. Locate the https://theschoolsnetwork.sharepoint.com/sites/is/servicemanagement/Lists/Passwords/DispForm.aspx?ID=218&e=vBjvW8[master set of keys in SharePoint]
+2. Copy all of the attached files (private and public keys) to `%USERPROFILE%\.ssh` (Windows) / `~/.ssh` (Mac/Linux)
+
+3. Open Git Bash (Windows) or Bash (Mac/Linux) and edit `~.ssh/config` to include the following lines:
++
+[source]
+----
+Host web01.ssat.cloud
+  IdentityFile ~/.ssh/serveradmin_id_rsa
+  User ssatuk
+  IdentitiesOnly yes
+
+----
+
+4. Set up the following environment variables on your machine:
++
+|===
+|Variable|Link to value
+
+|ANSIBLE_SECRETHUB_CREDENTIAL_LEARN
+|https://theschoolsnetwork.sharepoint.com/sites/is/servicemanagement/Lists/Passwords/DispForm.aspx?ID=219&e=FPtPD2[Value in SharePoint]
+
+|DO_TOKEN
+|https://theschoolsnetwork.sharepoint.com/sites/is/servicemanagement/Lists/Passwords/DispForm.aspx?ID=220&e=nbxSG2[Value in SharePoint]
+
+|GIT_CREDENTIALS
+|https://theschoolsnetwork.sharepoint.com/sites/is/servicemanagement/Lists/Passwords/DispForm.aspx?ID=221&e=cYATOU[Value in SharePoint]
+
+|===

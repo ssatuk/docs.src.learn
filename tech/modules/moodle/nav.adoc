@@ -1,4 +1,6 @@
 * xref:index.adoc[Moodle Technical Overview]
+** xref:procedures/index.adoc[Maintenance procedures]
+*** xref:procedures/moodle-upgrade.adoc[Upgrade Moodle on server]
 ** xref:configuration/index.adoc[Moodle Configuration]
 *** xref:configuration/webservices.adoc[Moodle Web Services]
 ** Moodle Development
@@ -10,6 +12,7 @@
 *** xref:development/testing.adoc[Testing]
 *** xref:development/references.adoc[Other sources of information]
 ** xref:releases/index.adoc[Release Notes]
+
 
 
 
