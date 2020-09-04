@@ -166,6 +166,26 @@ image::moodle-branch-2.png[]
 [[section-ssat-branches]]
 === Branches
 
+[NOTE]
+====
+.Current branches
+[options = "header" cols="1,1"]
+|===
+|Purpose
+|Branch
+
+|Current Integration Branch
+a|`**{mdl-integration-branch}**`
+
+|Current Deployment Branch
+a|`**{mdl-deployment-branch}**`
+
+|===
+====
+
+More generically the naming pattern we use for branches is:
+
+.Generic branch naming
 [options = "header" cols="1,1,1"]
 |===
 |Branch
