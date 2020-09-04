@@ -1,0 +1,6 @@
+= ssat-v3.9.1-03
+
+This is a maintenance release bringing in upstream fixes.
+
+* https://ssat.aha.io/features/LMS-76[merge Moodle upstream fixes to 20200827]
+* https://ssat.aha.io/features/LMS-75[merge upstream bugfixes for plugin assignsubmission-maharaws]

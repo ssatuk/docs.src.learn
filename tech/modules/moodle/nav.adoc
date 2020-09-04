@@ -9,6 +9,7 @@
 *** xref:development/running_locally.adoc[Local development]
 *** xref:development/testing.adoc[Testing]
 *** xref:development/references.adoc[Other sources of information]
+** xref:releases/index.adoc[Release Notes]
 
 
 

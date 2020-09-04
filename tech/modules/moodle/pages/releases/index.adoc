@@ -1,0 +1,3 @@
+= SSAT Moodle Release Notes
+
+* xref:releases/detail/ssat-v3.9.1-03.adoc[ssat-v3.9.1-03]
