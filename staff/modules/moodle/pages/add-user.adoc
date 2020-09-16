@@ -1,0 +1,22 @@
+= Adding users to Moodle
+
+== Automatic on first login
+
+Any user can create a Moodle account simply by logging in to the system via the SSAT Single Sign On.
+
+NOTE: By default they will not have access rights to any course
+
+== Matching pre-populated users
+
+We will sometimes pre-populate user accounts (e.g. xref:processstaff:dynamics:adding-users-to-moodle-course.adoc[by using the automation from Dynamics]) to ensure that when a user first logs in they immediately have access to a course.
+
+In that case we have customised Moodle so it will compare the lowercase version of the email from the SSO login with the  email attached to the pre-populated Moodle account (which should also be in lowercase - this is a case-sensitive match due to Moodle internal code restrictions). If there is a match then the incoming SSO user is matched to the pre-populated user and will immediately have access to anything that user has access to.
+
+== Adding users manually
+
+This is outside user scope, if you think there is a need to do this please log a mailto:help@ssatuk.co.uk?subject=Manual%20addition%20of%20Moodle%20user[helpdesk ticket].
+
+
+
+
+

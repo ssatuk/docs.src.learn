@@ -1,0 +1,47 @@
+= Enroling users to Moodle Courses
+
+Moodle uses the term "enrolment" to mean giving a user access to a course.
+
+The privileges a user then has within that course depend on what role they have been enroled in (e.g. Student, Teacher, manager etc),
+
+
+NOTE: Moodle uses the English spelling of _enrol/ment_ rather than the US version with two 'l's.
+
+== Enrolment Methods
+
+Moodle supports multiple enrolment methods, enabling multiple ways to grant access.
+
+At this time we only use two methods:
+
+* Manual (also used by our automation)
+* Self-Enrolment (currently only used when guarded by cohort membership to allow SSAT staff to self-enrol in certain courses)
+
+== Manual enrolment in course
+
+TIP: Mostly you should only use this method to add staff or consultants to courses, as we want delegates to be xref:processstaff:dynamics:adding-users-to-moodle-course.adoc[recorded in Dynamics].
+
+You can use this method to directly add a user to a course in Moodle provided you have one of the following roles in that course:
+
+* Manager
+* Teacher
+* Non-Editing Teacher
+
+The other pre-requisite is that the xref:add-user.adoc[user already exists in Moodle].
+
+Within the course:
+
+1. Click the Participants link in the nav drawer to open the Participants page.
+2. Click the 'Enrol users' button at the top right of the page.
+3. Use the 'Assign roles' dropdown if you wish to change the role.
+4. Click 'Show more' to expand the enrolment options and set them as appropriate. These include the enrolment duration.
+5. Browse or search for the user with the dropdown menu next to 'Select users' (note that when searching for users, exact matches are listed first). Click the downward triangle to browse for users, or begin typing in the box to search for users.
+6. Click the user to select them. The user will appear above the dropdown menu, indicating that the user is enrolled.
+7. When you have finished, click the 'Enrol selected users and cohorts' button.
+
+== Automated enrolment
+
+We have set up an integration to support enrolment based on records in Dynamics. For further information see the documentation under xref:processstaff:dynamics:adding-users-to-moodle-course.adoc[Automated Processes].
+
+== See also
+
+* https://docs.moodle.org/39/en/Manual_enrolment[Manual enrolment (Moodle docs)^]
