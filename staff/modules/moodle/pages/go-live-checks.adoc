@@ -1,0 +1,19 @@
+= Go-Live Checks 
+
+NOTE: first draft, more detailed instructions later, please feedback questions and suggestions using link in the heading
+
+Here are the suggested checks before releasing a course for enrolments:
+
+* check course title, subtitle, description, category and dates
+* preview completion certificate, check course title fits in template - possibly revisit first step
+* check correct teacher(s) and manager(s) enrolled
+* in CRM check course record for correct Moodle Id (the other fields are informational only)
+* look at completion options on every activity, for each ask yourself:
+** do we want to track completion of this (does it make sense)?
+** is the default of manual completion by student correct?
+** if not add the rules
+* if you have a course completion block, go into settings / course competion and setup which activities count towards completion
+* scan the course for visiblity rules (such as can't see X until Y is completed) and make sure they make sense
+* edit boiler plate text on  evaluation and edit the questions to fit your event!
+* check all settings on Zoom or Teams meetings
+* when all is good set course visiblity to "Show"
