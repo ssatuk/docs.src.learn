@@ -1,0 +1,34 @@
+= Copying an existing course
+
+(aka cloning a course)
+
+== Context
+
+Most of our courses are run on a closed-cohort basis because they mostly involve some form of live interaction. In other words we don't as yet have any courses that are designed for any given individual delegate to take in a self-paced way without live interaction, and at start and finish times of their own choice.
+
+It is therefore normal practice that the educational lead for the course will maintain a master template version which receives any content updates. When a particular iteration of a course is planned, a copy needs to be created to form the actual course that delegates will be enroled in.
+
+== What is required
+
+To make a new copy of a course two things have to happen:
+
+* in Moodle, the correct template course has to be copied, with the copy placed in the correct category
+* a matching record has to be created in Dynamics to enable automated enrolments from CRM.
+
+The first operation can be done by anyone with Teacher rights (or higher) on the template course, but as the creation of Dynamics records currently requires manual intervention by a system admin, it is safest to request the whole job via https://ssat.zendesk.com/hc/en-gb/requests/new[helpdesk request], making clear which course is the source.
+
+After copying  various items of course configuration (such as visiblity and dates) may need to be checked and adjusted as part of the standard xref:go-live-checks.adoc[Go Live Checks]
+
+== Course templates that include user content
+
+When we copy a course, we normally exclude user data, this is especially important if it's necessary to copy a course that has had delegates attached.
+
+However there are some forms of course content, such as Wiki pages, which are classed as user data and which are not copied when these settings are chosen.
+
+[IMPORTANT]
+====
+if you design a course template that includes wiki pages - for example as a starter for delegates to develop their own content from:
+
+* only ever make edits on a template version of the course
+* when requesting a course copy make clear that you need user data 
+====

@@ -1,4 +1,5 @@
 * xref:index.adoc[Moodle]
+** xref:course-copying.adoc[Copying a course]
 ** xref:go-live-checks.adoc[Pre-launch checks]
 ** xref:add-user.adoc[Add user to Moodle]
 ** xref:enrol-user.adoc[Enrol user in Moodle course]
