@@ -1,11 +1,20 @@
 = Release
 
+== Upstream changes
+
 Introduces all upstream minor features in 3.9.2 - 3.9.4 and bug fixes to 11/02/2021
 
 * https://tracker.moodle.org/browse/MDL-68715?jql=project%20%3D%20mdl%20AND%20resolution%20%3D%20fixed%20AND%20fixVersion%20in%20(3.9.2)%20ORDER%20BY%20priority%20DESC[Moodle issues closed in 3.9.2]
 * https://tracker.moodle.org/browse/MDL-70137?jql=project%20%3D%20mdl%20AND%20resolution%20%3D%20fixed%20AND%20fixVersion%20in%20(3.9.3)%20ORDER%20BY%20priority%20DESC[Moodle issues closed in 3.9.3]
 * https://tracker.moodle.org/browse/MDL-69868?jql=project%20%3D%20mdl%20AND%20resolution%20%3D%20fixed%20AND%20fixVersion%20in%20(3.9.4)%20ORDER%20BY%20priority%20DESC[Moodle issues closed to date in 3.8.4]
 
+
+== Local changes
+
+Deleted the plugin `enrol_stripepayment`:
+
+* it needs significant updating to merge our customisations with upstream fixes
+* we aren't using it
 
 == Plugin Updates
 
