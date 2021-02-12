@@ -1,0 +1,21 @@
+= enrol_stripepayment
+
+== Overview
+
+Use Stripe payment gateway to allow self-enrollment for a fee
+
+== Repos
+
+* Origin git@bitbucket.org:ssat/moodle-enrol_stripepayment.git
+* Upstream  https://github.com/dualcube/moodle-enrol_stripepayment.git
+
+== Changelog
+
+We have customised this plugin to push hooks that we can use for creating invoice details in CRM
+
+Our version is maintained on branch `ssa` of the origin repo.
+
+NB not yet in use
+
+
+

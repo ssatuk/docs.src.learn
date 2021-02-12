@@ -1,0 +1,14 @@
+= block_point_view
+
+Allows to add customizable reaction buttons to moodle activities, display the number of users who reacted and the type of reaction or specify graphically difficulty levels for activities with color tracks
+
+== Repos
+
+* origin - git@github.com:ssatuk/moodle-block_point_view.git
+* uostream - https://github.com/QuentinFombaron/moodle-block_point_view.git
+
+== Changelog
+
+No Changelog published by author
+
+See https://github.com/QuentinFombaron/moodle-block_point_view/commits/master[Github commits]

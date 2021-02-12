@@ -1,0 +1,16 @@
+= local_cohortrole
+
+== Overview
+
+Automatically synchronize cohort members into system roles.
+
+
+== Repos
+
+origin -  git@github.com:ssatuk/moodle-local_cohortrole.git
+
+upstream - https://github.com/paulholden/moodle-local_cohortrole.git
+
+== Changes
+
+See   https://github.com/paulholden/moodle-local_cohortrole/commits/v3.3 [GitHub changelog]

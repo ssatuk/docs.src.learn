@@ -1,0 +1,13 @@
+= local_aws
+
+== Overview
+
+Encapsulation of AWS SDK for PHP.
+
+See https://github.com/catalyst/moodle-local_aws for further information
+
+== Repos
+
+* origin    git@bitbucket.org:ssat/moodle-local_aws.git
+* upstream  https://github.com/catalyst/moodle-local_aws.git
+
