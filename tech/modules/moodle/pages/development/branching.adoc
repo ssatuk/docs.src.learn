@@ -13,17 +13,17 @@ To understand how the core Moodle team use branches, and by extension how we use
 |Phasing
 
 |Major
-|3.7
+|3.11
 |Twice per year
 |May, Nov
 
 |Minor
-|3.6.1
+|3.10.3
 |Six times per year
 |Jan, Mar, May, Jul, Sep, Nov
 
 |Bugfix
-|Weekly release 3.6.4+
+|Weekly release 3.10.3+
 |Weekly
 |Thursday
 
@@ -55,7 +55,7 @@ These are (some of) the branches you will find in the repository that have origi
 
 
 |MOODLE_XX_STABLE
-|Current stable release of Moodle, e.g. MOODLE_36_STABLE is the latest stable state of 3.6 (including minor releases such as 3.6.1 )
+|Current stable release of Moodle, e.g. MOODLE_310_STABLE is the latest stable state of 3.10 (including minor releases such as 3.10.1 )
 |The only things we EVER do with MOODLE_XX_STABLE branches is to fetch from upstream (them) and push to origin (us), and merge bug fixes from them into our integration branches. 
 
 |===
