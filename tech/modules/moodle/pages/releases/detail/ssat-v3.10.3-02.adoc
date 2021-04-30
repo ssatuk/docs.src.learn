@@ -1,0 +1,8 @@
+= ssat-v3.10.3-02
+
+Major version release upgrading us to Moodle 3.10.3
+
+Upstream release notes are https://docs.moodle.org/dev/Moodle_3.10_release_notes[here]
+
+We have also introduced the https://evolutioncode.uk/index.php/tiles/docs/teachers/[Tiles course format] plugin
+

@@ -1,5 +1,7 @@
 = enrol_stripepayment
 
+WARNING: We have removed this plugin
+
 == Overview
 
 Use Stripe payment gateway to allow self-enrollment for a fee
