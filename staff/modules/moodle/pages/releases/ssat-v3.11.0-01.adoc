@@ -1,0 +1,96 @@
+= Release ssat-v3.11.0-01
+
+== Summary
+
+This is the first SSAT release of Moodle 3.11, a major version upgrade offering several new features.
+
+Upgrading also allows us to stay on supported software - Moodle 3.11 is supported until May 2022 for core feature bugs, and November 2022 for security fixes.
+
+== New Features
+
+Here is a summary of new features in Moodle 3.11. The links go to more detailed information on the Moodle documentation site, you can also find some short informative videos on the YouTube playlist for https://www.youtube.com/playlist?list=PLxcO_MFWQBDdG1jK_Eu_D4GC-AOGBEXh6s[Moodle 3.11 release highlights]:
+
+
+* Overview of what's new in 3.11
++
+video::vFfoW_8jXrM[youtube]
+
+* Accessiblity toolkit
++
+video::Vj3aEgb1ihw[youtube]
+
+* Student activity completion
++
+video::HQHl_oIvJlI[youtube]
+
+* Quiz improvements 
++
+video::0v0tbv2YvpM[youtube]
+
+=== For admins
+
+(https://docs.moodle.org/311/en/New_for_administrators[Moodle documentation])
+
+* Accessiblity toolkit
+* Open Badges v 2.1 compliancy
+* Disable H5P content
+* New PDF converter
+* User profile fields changes
+* Restore permission overrides
+
+=== For teachers
+
+(https://docs.moodle.org/311/en/New_for_teachers[Moodle documentation])
+
+* Activity completion - show or hide activity deadlines and completion criteria on the course page
+* Accessiblity checker - identify and correct accessiblity errors in your course content
+* H5P and content bank - mark content as 'unlisted' and see when it is linked elsewhere
+* Question settings retained
+* Quiz Essay question - set min and max word limits and benefit from plagiarism support
+* Activity completion report - more filtering options 
+
+=== For students
+
+(https://docs.moodle.org/311/en/New_for_students[Moodle documentation])
+
+* Clear view of tasks and deadlines - view activity dates and completion criteria on the course page
+* Never miss a deadline or task - view activity dates and completion criteria in the activity page
+* Streamlined manual completion - mark complete from within the activity and go directly to your next task
+* Quiz pass grades - view pass grades when accessing a Quiz
+* Audio / Video playback rates - control how fast sound and video files play back
+* Essay word limits - be alerted when submitting too few or too many word in a Quiz Essay
+
+
+== Highlighted plugin - Tiles layout
+
+This is also an opportunity to highlight a new course format that's available to SSAT teams, the Tiles Layout.
+
+NOTE: an upgrade for this format has just become available and will be installed to our system before the start of September term 2021.
+
+A course format which displays course topics as "Tiles", in a grid rather than as a list. When clicked, tile content is displayed under the tile with an animated transition. The layout adapts to different screen sizes and orientations. Within each tile, activities can also be set to display as "sub-tiles". For each tile, the teacher can pick an icon from a predefined set, or upload a background photo.
+
+image::moodle-tiles-format.png[]
+
+There's https://demo.evolutioncode.uk/course/view.php?id=3[a demo site available] from the authors.
+
+Remember, to use this new format it's best selected when you start setting up a new course - please https://evolutioncode.uk/tiles/docs/[see the documentation], and if you get stuck please mailto://help@ssatuk.co.uk?subject=Help%20with%20Moodle%20Tiles%20Format[raise a help ticket] to start a conversation.
+
+**Key features**
+
+* Tiles are used to show course topics and activities
+* Animation is used to expand tiles to reveal content
+* Icons or photos on each tile increase visual appeal
+* Modal windows (animated pop ups) to show content
+* Colours for tiles are customisable
+* Theme compatibility is broad (Boost, Clean, Essential, Moove and Adaptable).
+* Easy to switch into Tiles from other formats (e.g. Topics, Grid) without changing course content
+* User friendly (e.g. tile icons are provided and don't need to be uploaded)
+* Mobile responsive (adapts to different screen sizes and orientations)
+* Progress shown on tile with % in a circle, or as a fraction
+
+
+Remember, to use this new format it's best selected when you start setting up a new course - please https://evolutioncode.uk/tiles/docs/[see the documentation], and if you get stuck please mailto://help@ssatuk.co.uk?subject=Help%20with%20Moodle%20Tiles%20Format[raise a help ticket] to start a conversation.
+
+== See Also
+
+* https://ssattechdocs.azurewebsites.net/elearntech/1.0/moodle/releases/detail/ssat-v3.11.0-01.html[SSAT technical release notes for ssat-v3.11.0-01]

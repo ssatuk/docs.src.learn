@@ -4,3 +4,4 @@
 ** xref:add-user.adoc[Add user to Moodle]
 ** xref:enrol-user.adoc[Enrol user in Moodle course]
 ** xref:change-user-role.adoc[Change user roles]
+** xref:releases/index.adoc[Release notes]
