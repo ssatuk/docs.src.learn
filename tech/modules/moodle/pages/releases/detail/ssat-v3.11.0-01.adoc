@@ -1,0 +1,82 @@
+= ssat-v3.11.0-01
+
+== Summary
+
+Major relase updating us to Moodle 3.11, deployed to our production server  on 03/08/2021
+
+== Moodle 3.11
+
+This version of Moodle is https://docs.moodle.org/dev/Releases#Moodle_3.11[supported] until 9th May 2022.
+
+Upstream release notes are https://docs.moodle.org/dev/Moodle_3.11_release_notes[here].
+
+== Included plugins
+
+We have included the following plugins in this build:
+
+[cols=3*,options=header]
+|===
+| plugin
+| version
+| notes
+
+|assignsubmission_maharaws
+|1.5.0 / 2020082100
+|
+
+|auth_outage
+|2021032500
+|currently disabled
+
+|block_point_view
+|v1.5 / 2020102700
+|
+
+|format_tiles
+|3.9.0.13 / 2020080613
+|
+
+|local_aws
+|3.133.32 / 2020112000
+|
+
+|local_azure_storage
+|2017102000
+|
+
+|local_cohortrole
+|3.3 / 2020110900
+|
+
+|mod_customcert
+|3.10.0 / 2020110901
+|
+
+|mod_hvp
+|1.22.2 / 2021043000
+|
+
+|theme_ssat
+|2019062400
+|
+
+|tool_objectfs
+|2020062400
+|
+
+|tool_trigger
+|2021030401
+|
+
+|tool_webanalytics
+|2020063001
+|
+
+|webservice_restful 
+|2021030400
+|
+
+
+
+|===
+
