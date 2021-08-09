@@ -12,6 +12,7 @@
 *** xref:development/testing.adoc[Testing]
 *** xref:development/references.adoc[Other sources of information]
 ** xref:releases/index.adoc[Release Notes]
+** xref:plugins/index.adoc[Installed Plugins]
 
 
 

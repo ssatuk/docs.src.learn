@@ -13,4 +13,4 @@ upstream - https://github.com/paulholden/moodle-local_cohortrole.git
 
 == Changes
 
-See   https://github.com/paulholden/moodle-local_cohortrole/commits/v3.3 [GitHub changelog]
+See   https://github.com/paulholden/moodle-local_cohortrole/commits/v3.4 [GitHub changelog]

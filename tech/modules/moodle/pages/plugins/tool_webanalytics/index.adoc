@@ -1,0 +1,19 @@
+= tool_webanalytics
+
+== Overview
+
+A Moodle admin tool adding Web Analytics to your Moodle site. The plugin currently supports following analytics tools: 
+
+* Matomo (formerly Piwik)
+* Google Universal Analytics
+* Google Tag Manager
+* Google Legacy Analytics (soon deprecated by Google)
+
+For details see https://github.com/catalyst/moodle-tool_webanalytics/blob/master/README.md[github]
+
+== Changes
+
+== 2021053102 (2021053102)
+
+See https://github.com/catalyst/moodle-tool_webanalytics/commits/2021053102[github]
+

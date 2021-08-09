@@ -1,0 +1,86 @@
+= ssat-v3.11.0-02
+
+== Summary
+
+Plugin update release, deployed to our production server  on 09/08/2021
+
+== Plugin updates
+
+* feat: upgrade course_format_tiles 3.9.0.13 (2020080613) => 3.11.0.5 (2020080621) (RC) LMS-95
+* feat: upgrade mod_customcert 3.10.0 / (2020110901) => 3.11.1 (2021051701) LMS-96
+* feat: upgrade local_cohortrole 3.3 (2020110900) => 3.4 (2021060800) LMS-97
+* feat: upgrade tool_webanalytics (2020063001) => (2021053102) LMS-98
+* feat: upgrade mod_hvp 1.22.2 (2021043000) => 1.22.3 (2021061100) LMS-99
+
+
+
+== Updated plugin list
+
+We have included the following plugins in this build:
+
+[cols=3*,options=header]
+|===
+| plugin
+| version
+| notes
+
+|assignsubmission_maharaws
+|1.5.0 / 2020082100
+|
+
+|auth_outage
+|2021032500
+|currently disabled
+
+|block_point_view
+|v1.5 / 2020102700
+|
+
+|format_tiles
+|3.11.0.5 (2020080621) (RC) 
+|
+
+|local_aws
+|3.133.32 / 2020112000
+|
+
+|local_azure_storage
+|2017102000
+|
+
+|local_cohortrole
+|3.4 (2021060800)
+|
+
+|mod_customcert
+|3.11.1 (2021051701)
+|
+
+|mod_hvp
+|1.22.3 (2021061100) LMS-99
+|
+
+|theme_ssat
+|2019062400
+|
+
+|tool_objectfs
+|2020062400
+|
+
+|tool_trigger
+|2021030401
+|
+
+|tool_webanalytics
+|(2021053102)
+|
+
+|webservice_restful 
+|2021030400
+|
+
+
+
+|===
+

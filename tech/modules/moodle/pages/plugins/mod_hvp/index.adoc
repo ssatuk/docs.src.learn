@@ -1,0 +1,43 @@
+= mod_hvp
+
+== overview
+
+Additional H5P features
+
+See https://moodle.org/plugins/mod_hvp
+
+== Changes
+
+=== 1.22.3 (2021061100)
+
+Moodle:
+* Fix whitespaces in xmldb file, big thanks to Alex Morris - https://github.com/alexmorrisnz
+* Fix issue where display options could not be turned off
+
+Editor:
+* Updated CKEditor
+* Fix special case where resetting the editor could crash
+
+Reporting:
+* Add support for blanks with alternatives, big thanks to Jwalit Shah - https://github.com/jwalits
+
+=== 1.22.0 (2021040800)
+
+H5P Core:
+
+* Adds optional accessible title for assistive technologies for content
+* Adds Panopto video provider integration
+* Adds language property to H5P iframe
+* Fix issue where editor would only use half the available width in Firefox
+* Korean translations for H5P editor, big thanks to Jeonhun Oh (https://github.com/totoromaum)
+* Dutch translations for H5P editor, big thanks to viragom (https://github.com/viragom)
+* Fix for PHP 8.0 warning, big thanks to Sara Arjona (https://github.com/sarjona)
+* Updates reporting module to work with content types that require version 1.1.0 of it
+* Prepares for release of content hub
+
+Moodle specific:
+
+* Improves asset caching, big thanks to Jamie Stamp (https://github.com/jamie-catalyst)
+* Adds userlist privacy classes, big thanks to Dan Marsden (https://github.com/danmarsden)
+* Adds title to content and embed iframe
+* Adds integration with Moodle core calendar, big thanks to Nicolas Dunand (https://github.com/ndunand)

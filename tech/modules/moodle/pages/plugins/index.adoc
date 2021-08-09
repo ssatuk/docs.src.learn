@@ -1,0 +1,67 @@
+= Plugins
+
+[cols=3*,options=header]
+|===
+| plugin
+| version
+| notes
+
+|assignsubmission_maharaws
+|1.5.0 / 2020082100
+|
+
+|auth_outage
+|2021032500
+|currently disabled 
+
+|xref:plugins/block_point_view/index.adoc[block_point_view]
+|v1.5 / 2020102700
+|
+
+|xref:plugins/course_format_tiles/index.adoc[format_tiles]
+|3.11.0.5 (2020080621) (RC) 
+|
+
+|xref:plugins/local_aws/index.adoc[local_aws]
+|3.133.32 / 2020112000
+|
+
+|local_azure_storage
+|2017102000
+|
+
+|xref:plugins/local_cohortrole/index.adoc[local_cohortrole]
+|3.4 (2021060800)
+|
+
+|xref:plugins/mod_customcert/index.adoc[mod_customcert]
+|3.11.1 (2021051701)
+|
+
+|xref:plugins/mod_hvp/index.adoc[mod_hvp]
+|1.22.3 (2021061100) LMS-99
+|
+
+|theme_ssat
+|2019062400
+|
+
+|tool_objectfs
+|2020062400
+|
+
+|tool_trigger
+|2021030401
+|
+
+|xref:plugins/tool_webanalytics/index.adoc[tool_webanalytics]
+|(2021053102)
+|
+
+|webservice_restful 
+|2021030400
+|
+
+
+
+|===
