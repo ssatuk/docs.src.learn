@@ -1,0 +1,19 @@
+= ssat-v3.11.0-03
+
+== Summary
+
+This release pulls upstream bug fixes and security patches to 05/08/2021
+
+== Details
+
+Update to https://github.com/moodle/moodle/commit/605ce2781b3a8b0d05e6fde4bcd70bde166167e3[3.11.2+ 05/08/2021]
+
+
+Our merge is at https://bitbucket.org/ssat/moodle/commits/fd11d610ef41c53d045f7055faea7e40ebb34d84?at=ssat-3.11.0-deployment 
+
+== Upstream release notes
+
+* https://docs.moodle.org/dev/Moodle_3.11.2_release_notes[Moodle 3.11.2]
+* https://docs.moodle.org/dev/Moodle_3.11.1_release_notes[Moodle 3.11.1]
+
+
