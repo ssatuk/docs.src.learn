@@ -1,0 +1,8 @@
+= ssat-v3.11.0-02
+
+== Overview
+
+Plugin updates, mostly bugfixes.
+
+See https://ssattechdocs.azurewebsites.net/elearntech/1.0/moodle/releases/detail/ssat-v3.11.0-02.html[SSAT technical release note]
+

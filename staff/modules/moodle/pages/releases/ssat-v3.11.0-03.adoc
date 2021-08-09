@@ -1,0 +1,8 @@
+= ssat-v3.11.0-03
+
+== Overview
+
+Upstream Moodle bug fixes and security patches to 05/08/2021.
+
+See https://ssattechdocs.azurewebsites.net/elearntech/1.0/moodle/releases/detail/ssat-v3.11.0-03.html[SSAT technical release note]
+
