@@ -3,8 +3,10 @@ title: e-Learning Platform Overview
 version: '1.0'
 asciidoc: 
   attributes: 
-    mdl-deployment-branch: ssat-3.10.0-deployment
-    mdl-integration-branch: ssat-3.10.0-integration
+    mdl-deployment-branch: ssat-3.11.0-deployment
+    mdl-integration-branch: ssat-3.11.0-integration
+    mha-deployment-branch: ssat-21.04-deployment
+    mha-integration-branch: ssat-21.04-integration
 nav:
 - modules/ROOT/nav.adoc
 - modules/moodle/nav.adoc
