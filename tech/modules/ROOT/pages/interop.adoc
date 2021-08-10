@@ -1,0 +1,6 @@
+= Moodle / Mahara Inter-Operation
+
+== Overview
+
+The two services are inter-connected in several ways to provide user features that sit across both systems.
+

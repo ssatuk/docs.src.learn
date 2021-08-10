@@ -1,2 +1,3 @@
 * xref:index.adoc[Introduction]
 ** xref:workstation-requirements.adoc[Developer workstation setup]
+* xref:interop.adoc[Moodle and Mahara Interoperation]

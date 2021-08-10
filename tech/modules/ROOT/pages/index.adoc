@@ -4,6 +4,7 @@ This section of the documentation covers the following elements of our e-Learnin
 
 * Moodle installation
 * Mahara installation
+* xref:interop.adoc[Moodle / Mahara Interoperation]
 * Cloud resource deployment
 * Server software installation
 

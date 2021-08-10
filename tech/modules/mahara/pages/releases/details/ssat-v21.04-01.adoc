@@ -1,0 +1,13 @@
+= Release notes ssat-v21.04-1
+
+== Overview
+
+This is our first release against Mahara 21.04
+
+== Contents 
+
+* feat: Mahara updated to 21.04.1
+* feat: SSAT theme added
+* feat: OIDC plugin with SSAT customisations added
+* feat: artefact/cloud plugin added
+

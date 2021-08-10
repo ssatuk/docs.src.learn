@@ -1,0 +1,24 @@
+= Mahara release notes
+
+== Upstream release notes
+
+Support lifecycle dates and links to all upstream release notes are available https://wiki.mahara.org/wiki/Releases[here].
+
+== SSAT releases
+
+We periodically release updated packages that include upstream changes, external plugin changes and SSAT customisations. Details below:
+
+[%header,cols=2*]
+|===
+
+|Release
+|Date
+
+|xref:releases/details/ssat-v21.04-01.adoc[ssat-v21.04-01]
+|10/08/2021
+
+|Earlier releases (20.04-based)
+|Apr-Jul 2020
+
+
+|===

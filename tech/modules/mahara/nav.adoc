@@ -1,0 +1,3 @@
+* xref:index.adoc[Mahara Technical Overview]
+** xref:releases/index.adoc[Release Notes]
+*** xref:releases/details/ssat-v21.04-01.adoc[Release ssat-v21.04-01]

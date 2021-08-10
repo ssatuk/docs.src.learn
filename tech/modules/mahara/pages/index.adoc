@@ -1,0 +1,25 @@
+= Mahara technical overview
+
+https://mahara.org/[Mahara] is an open-source ePortfolio tool - it allows users to assemble and share multimedia portfolios to document and evidence a body of learning.
+
+.**Overview of latest release**
+video::qaiO-jguGbA[youtube, width=640, height=400, start=2]
+
+== SSAT-specific information
+
+* https://myportfolio.ssat.cloud[Live site]
+* https://myportfolio-stage.ssat.cloud[Staging site]
+* https://github.com/ssatuk/mahara[Code repository]
+** Current Integration Branch `**{mha-integration-branch}**`
+** Current Deployment Branch `**{mha-deployment-branch}**`
+
+== Useful resources
+
+* https://mahara.org/[Mahara product site]
+* https://demo.mahara.org/[Mahara demo site (vanilla)]
+* https://mahara.org/interaction/forum/index.php?group=1[Community Forums]
+* https://manual.mahara.org/en/21.04/[Software manual]
+* https://wiki.mahara.org/wiki/Mahara_Wiki[Mahara wiki]
+* Source code
+** https://git.mahara.org/mahara/mahara[Upstream code repo]
+** https://github.com/MaharaProject/mahara[Github mirror of upstream code repo]

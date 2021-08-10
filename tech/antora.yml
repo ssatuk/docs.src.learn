@@ -10,4 +10,5 @@ asciidoc:
 nav:
 - modules/ROOT/nav.adoc
 - modules/moodle/nav.adoc
+- modules/mahara/nav.adoc
 - modules/architecture/nav.adoc
