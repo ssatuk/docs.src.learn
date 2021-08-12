@@ -1,0 +1,24 @@
+= Configuring Portfolio export to Mahara
+
+== Overview
+
+This is one of the ways in which xref:ROOT:interop.adoc[Moodle and Mahara can inter-operate], in this case to enable students to save portfolio items from Moodle into their Mahara account.
+
+== Configuration
+
+=== Configure portfolio connection
+
+. Ensure xref:ROOT:features/login-interop.adoc[Mahara-Moodle inter-networking is fully configured]
+. login to Moodle with admin rights
+. go to **Site administration > Plugins > Portfolios > Manage portfolios**
+. Select Mahara ePortfolio as `Enabled and visible`
+. Fill in fields and save
+  image:mdl-add-mha-portfolio.png[]
+
+=== Grant rights
+
+. login to Moodle with admin rights
+. go to **Administration > Site administration > Users > Permissions > Define Roles**
+. Click on role `Student`
+. Ensure **Export to portfolios** (`moodle/portfolio:export`) permission is assigned and enabled
+

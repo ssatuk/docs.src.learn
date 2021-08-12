@@ -1,0 +1,24 @@
+= Saving Moodle portfolio to Mahara
+
+== Overview
+
+When portfolios are enabled in Moodle, students can save work to one or more external locations.
+
+The types of contributions that can be exported are:
+
+* Assignment submissions - single and multiple file uploads
+* Chat sessions
+* Database activity module entries (**export** tag may be added to list and single templates)
+* Database activities
+* Forum posts
+* Glossary entries
+
+== Configuring Portfolio export to Mahara
+
+See xref:moodle:configuration/configure-portfolios-to-mha.adoc[Moodle configuration]
+
+
+== See also
+
+* https://docs.moodle.org/311/en/Portfolios[Moodle documentaiton on Portfolios]
+

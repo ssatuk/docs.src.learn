@@ -37,7 +37,7 @@ image:mdl-peer-settings.png[]
 . Find and enable **Roam to a remote application via MNet** (`moodle/site:mnetlogintoremote`)
 . you will need to xref:#_configure_network_servers_block[configure the network servers block] wherever you want users to see a link to roam to remote servers
 
-=== Configure Network Servers block
+=== Configure Network Servers block 
 
 . login to Moodle with admin rights
 . go to **Site administration > Plugins > Blocks > Manage blocks**
