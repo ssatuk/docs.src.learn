@@ -1,0 +1,51 @@
+= Configure XML-RPC (MNet) networking
+
+== Overview
+
+This is the oldest form of networking supported by Moodle, and enables a set of servers to interact with each other.
+
+We are specifically using it to allow xref:ROOT:features/login-interop.adoc[seamless login to Mahara from attached Moodle]. Please see that page for the full list of ocnfiguraiton steps across the two systems.
+
+== Configuration
+
+=== Enable networking
+
+NOTE: Ensure xref:mahara:/configuration/xml-rpc-networking.adoc[Mahara networking] has been configured
+
+. login to Moodle with admin rights
+. go to **Administration > Site administration > Advanced Features** and enable networking
++
+image:mdl-networking.png[]
+. go to **Administration > Site administration > Network > Manage peers**
+. add a new host, with the hostname being the Mahara URL, and type mahara
++
+image:mdl-add-network-peer.png[]
+. once the site has been added, click on the site name in the list of peers, you should be able to see the remote certificate
++
+image:network-peer-details.png[]
+. whilst in the peer details screen click **Services**
+. for our setup with Mahara, select all the options and save
++
+image:mdl-peer-settings.png[]
+. now go to Mahara and xref:mahara:configuration/xml-rpc-networking.adoc#_configure_moodle_login_to_specific_institution[connect this Moodle to a specific institution]
+
+=== Enable users to access network servers
+
+. login to Moodle with admin rights
+. go to **Administration > Site administration > Users > Permissions > Define Roles**
+. Click on role `Authenticated User`
+. Find and enable **Roam to a remote application via MNet** (`moodle/site:mnetlogintoremote`)
+. you will need to xref:#_configure_network_servers_block[configure the network servers block] wherever you want users to see a link to roam to remote servers
+
+=== Configure Network Servers block
+
+. login to Moodle with admin rights
+. go to **Site administration > Plugins > Blocks > Manage blocks**
+. Ensure `Network servers` block is enabled
+. go a location where you want to add the block, e.g. a dashboard or a course. To edit the default dashboard for all users go to **Administration > Appearance > Default Dashboard** page.
+. Select `Blocks editing On` at top right
+. From left hand navigation select `Add a block`, then pick the Network Servers block
+. position the block as you want on the page
+. select `Blocks editing off` at top right
+. if you were editing the default dashboard, click `Reset Dashboard for all users`
+       

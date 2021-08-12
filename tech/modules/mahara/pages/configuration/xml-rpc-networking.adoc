@@ -1,0 +1,29 @@
+= Configure networking with Moodle via XML-RPC
+
+== Overview
+
+This configuration enables xref:ROOT:features/login-interop.adoc[seamless login to Mahara from attached Moodle].
+
+To ensure accounts created through this method are compatible with accounts created by a direct login using SSAT's single-sign on, you must complete the xref:configuration/oidc.adoc[OpenId Connect configuration] first.
+
+== Configure site-wide networking
+
+. login to Mahara with admin rights
+. access **Site Configuration / Networking** (`/admin/site/networking.php`)
+. Ensure networking is enabled and that the WWW root is connected
+. save the settings and check that a valid key is generated
+  image:mahara-networking.png[]
+. now go and complete the xref:moodle:configuration/xml-rpc-networking.adoc[Moodle networking configuration]
+
+== Configure Moodle login to specific institution
+
+One Moodle can only connect to one institution within Mahara. We configure our system so that the main SSAT Moodle connects to the "SSAT" institution in Mahara
+
+. login to Mahara with admin rights
+. access **Institutions / Settings** (`/admin/users/institutions.php`)
+. click the settings cog next to **SSAT** institution
+.  add XML-RPC authentication
+  image:institution-auth-xmlrpc-add.png[]
+. Fill in fields:
+  image:institution-auth-xmlrpc-config.png[]  
+. go back to Moodle and xref:moodle:configuration/xml-rpc-networking.adoc#_enable_users_to_access_network_servers[Enable users to access network servers]

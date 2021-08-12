@@ -1,0 +1,19 @@
+= Login seamlessly to Mahara from Moodle
+
+== Overview
+
+This feature allows a user that is authenticated inside Moodle to seamlessly transfer to their account in Mahara without having to re-authenticate via the SSO. It uses the MNet networking features of both products to allow Mahara to authenticate a user against the Moodle database.
+
+If a user uses this who has not previously logged in to Mahara, then an account will be created for them.
+
+The user can later access the Mahara account directly via SSO login provided email addresses match.
+
+== Configuration steps
+
+* set up xref:mahara:configuration/xml-rpc-networking.adoc#_configure_site_wide_networking[Mahara site-wide networking]
+* set up xref:moodle:configuration/xml-rpc-networking.adoc#_enable_networking[Moodle site-wide networking]
+* xref:mahara:configuration/xml-rpc-networking.adoc#_configure_moodle_login_to_specific_institution[connect Moodle to specific institution in Mahara]
+* ensure authenticated Moodle users have xref:moodle:configuration/xml-rpc-networking.adoc#_enable_users_to_access_network_servers[permission to connect to another server]
+* configure Network Servers block in Moodle
+
+

@@ -1,0 +1,9 @@
+= Configuration of OpenId Connect authentication
+
+== Overview
+
+This is used to allow users to login to Mahara using the SSAT single sign on
+
+== Configuration
+
+Details to follow

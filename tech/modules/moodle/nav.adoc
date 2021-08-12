@@ -2,6 +2,7 @@
 ** xref:procedures/index.adoc[Maintenance procedures]
 *** xref:procedures/moodle-upgrade.adoc[Upgrade Moodle on server]
 ** xref:configuration/index.adoc[Moodle Configuration]
+*** xref:configuration/oauth2.adoc[OAuth2 authentication]
 *** xref:configuration/webservices.adoc[Moodle Web Services]
 ** Moodle Development
 *** xref:development/index.adoc[Introduction]

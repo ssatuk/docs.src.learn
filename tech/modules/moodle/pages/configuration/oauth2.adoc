@@ -1,0 +1,9 @@
+= OAuth2 COnfiguration
+
+== Overview
+
+OAuth2 authentication is used to allow login with the SSAT single-sign on
+
+== Configuration steps
+
+To follow

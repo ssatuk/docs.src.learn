@@ -1,3 +1,6 @@
 * xref:index.adoc[Mahara Technical Overview]
+** Configuration
+*** xref:configuration/oidc.adoc[OpenId Connect (SSAT single signon)]
+*** xref:configuration/xml-rpc-networking.adoc[Networking to Moodle (XML-RPC)]
 ** xref:releases/index.adoc[Release Notes]
 *** xref:releases/details/ssat-v21.04-01.adoc[Release ssat-v21.04-01]

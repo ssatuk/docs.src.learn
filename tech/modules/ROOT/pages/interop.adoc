@@ -4,3 +4,12 @@
 
 The two services are inter-connected in several ways to provide user features that sit across both systems.
 
+Documentation about these features is split between technical documentation in this site, and [user documentation].
+
+== Features
+
+* xref:features/login-interop.adoc[Login seamlessly to Mahara from Moodle]
+* Attach Mahara to an activity in Moodle
+* Save work in Moodle as portfolio content in Mahara
+* Use portfolio pages or collections from Mahara as the submission for an assignment in Moodle
+* Display Moodle course progress on a Mahara portfolio page (to come)
