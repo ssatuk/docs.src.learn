@@ -1,0 +1,14 @@
+= ssat-v3.11.0-04
+
+== Summary
+
+This release pulls upstream bug fixes and security patches to 24/08/2021
+
+== Details
+
+Release tagged https://bitbucket.org/ssat/moodle/commits/tag/ssat-v3.11.0-04[ssat-v3.11.0-04]
+
+* Update Moodle to https://github.com/moodle/moodle/commit/f9ea7e747f76fc3c72880531aed052cb7af89ebc[3.11.2+ 20/08/2021]
+* Update `format_tiles` plugin to 3.11.1.1 (release version) https://moodle.org/plugins/format_tiles/3.11.1.1/24967[external release notes]
+
+
