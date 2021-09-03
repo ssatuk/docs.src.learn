@@ -1,0 +1,14 @@
+= ssat-v3.11.0-05
+
+== Summary
+
+This release pulls upstream bug fixes and security patches to 02/09/2021
+
+== Details
+
+Release tagged https://bitbucket.org/ssat/moodle/commits/tag/ssat-v3.11.0-05[ssat-v3.11.0-05]
+
+* Update Moodle to https://github.com/moodle/moodle/commit/7fdf72a26847da7661a17cb5e5d42e9c1d3da82b [3.11.2+ 02/09/2021]
+* Update `format_tiles` plugin to 3.11.1.2 (release version)
+** Fix issue with completion hiding sec zero content
+** Fix issue special chars in mod title
