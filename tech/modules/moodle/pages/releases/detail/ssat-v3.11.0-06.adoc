@@ -1,0 +1,74 @@
+= ssat-v3.11.0-06
+
+== Summary
+
+This release pulls upstream bug fixes and security patches to 08/10/2021
+
+== SSAT code changes
+
+None in this release
+
+== Moodle core updates
+
+* LMS-106 update to v3.11.3 https://docs.moodle.org/dev/Moodle_3.11.3_release_notes[external release notes]
+* LMS-105 weekly update 3.11.3+ 2021-10-06 d2c4d59f812
+
+== Plugin updates
+
+* LMS-107 update admin/tool/trigger to 2021030403
+* LMS-108 update admin/tool/objectfs
+* LMS-109 updatemod/customcert
+ ** You can now choose the course short or full name to display
+* LMS-110 update auth/outage to 2021062300
+* LMS-111 update mod/assign/submission/maharaws
+* LMS-112 update course/format/tiles to Version 3.11.1.3 (2020080629)
+ ** Fix JS error on course edit form
+ ** Minor style/layout adjustments for modals, stealth activities and Lambda theme
+
+== Plugins review
+
+|===
+| Module | Status
+
+| webservice/restful
+| No change
+
+| admin/tool/trigger
+| Update to d43b2e7 ("Offload upgrade processing to an adhoc task (#152)", 2021-09-30)
+
+| admin/tool/objectfs
+| Update a432060 ("T12 Unit text fix, test_delete_empty_folders()", 2021-09-22)
+
+| local/azure_storage
+| No change
+
+| local/aws
+| No change
+
+| admin/tool/webanalytics
+| No change
+
+| mod/customcert
+| Update to 80dc739 ("Do not encode html entities in emails (#457)", 2021-09-28)
+
+| theme/ssat
+| No change
+
+| auth/outage
+| Update to 690d90f ("Merge pull request #264 from catalyst/issue263", 2021-09-02)
+
+| mod/assign/submission/maharaws
+| Update to c3b4ba1 ("Update plugin information", 2021-10-07)
+
+| local/cohortrole
+| No change
+
+| blocks/point_view
+| No change
+
+| mod/hvp
+| No change
+
+| course/format/tiles
+| Update to 2f52e9a ("Version 3.11.1.3 (2020080629)", 2021-09-17)
+|===
