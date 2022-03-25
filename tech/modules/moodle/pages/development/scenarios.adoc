@@ -30,7 +30,7 @@ Then run the following in a Git Bash shell:
 ----
 #!/bin/bash
     git fetch upstream --tags
-    for BRANCH in MOODLE_39_STABLE MOODLE_310_STABLE MOODLE_311_STABLE master; do
+    for BRANCH in MOODLE_310_STABLE MOODLE_311_STABLE master; do
         git push origin refs/remotes/upstream/$BRANCH:refs/heads/$BRANCH
     done
     git push origin --tags
@@ -183,15 +183,15 @@ __for example from v3.10.0 to v3.11.0__
 
 
 [[section-feature-major-version-update]]
-== Updating feature to new major version
+== Updating feature to new major version of Moodle
 The strategy here is to keep the change history of our local development but avoid cluttering the branch with lots of unnececssary merges.
 
 The technique makes use of `git rebase --onto newbase oldbase`
-__(a good explanation of this command is in this https://content.pivotal.io/blog/git-rebase-onto[blog post] )__
+__(a good explanation of this command is in this https://content.pivotal.io/blog/git-rebase-onto[blog post] or this https://stackoverflow.com/questions/29914052/how-to-git-rebase-a-branch-with-the-onto-command/29916361#29916361[Stack Overflow answer])__
 
 1. create a new branch for the feature based on the old one
 +
-`git checkout -b ssat-3.11.0-feature-myfeature ssat-3.11.0-feature-myfeature`
+`git checkout -b ssat-3.11.0-feature-myfeature ssat-3.10.0-feature-myfeature`
 +
 2. rebase onto the new master version
 +
@@ -200,18 +200,19 @@ __(a good explanation of this command is in this https://content.pivotal.io/blog
 3. resolve any merge conflicts
 4. push to origin
 +
-`git push -u origin ssat-3.10.0-feature-myfeature`
+`git push -u origin ssat-3.11.0-feature-myfeature`
 +
 
 
 
 [[section-plugin-major-version-update]]
-== Updating plugin to new major version
+== Updating plugin to new major version of Moodle
+
 To allow for the possibility that we may have modified third-party code we seek to keep all change history for plugins too
 
 1. create a new branch for the feature based on the old one
 +
-`git checkout -b ssat-3.10.0-plugin-example_plugin ssat-3.10.0-plugin-example_plugin`
+`git checkout -b ssat-3.11.0-plugin-example_plugin ssat-3.10.0-plugin-example_plugin`
 +
 2. rebase onto the new major version
 +

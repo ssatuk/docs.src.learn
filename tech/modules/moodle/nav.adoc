@@ -12,6 +12,17 @@
 *** xref:development/testing.adoc[Testing]
 *** xref:development/references.adoc[Other sources of information]
 ** xref:releases/index.adoc[Release Notes]
+*** xref:releases/detail/ssat-v3.11.0-07.adoc[ssat-v3.11.0-07]
+*** xref:releases/detail/ssat-v3.11.0-06.adoc[ssat-v3.11.0-06]
+*** xref:releases/detail/ssat-v3.11.0-05.adoc[ssat-v3.11.0-05]
+*** xref:releases/detail/ssat-v3.11.0-04.adoc[ssat-v3.11.0-04]
+*** xref:releases/detail/ssat-v3.11.0-03.adoc[ssat-v3.11.0-03]
+*** xref:releases/detail/ssat-v3.11.0-02.adoc[ssat-v3.11.0-02]
+*** xref:releases/detail/ssat-v3.11.0-01.adoc[ssat-v3.11.0-01]
+*** Earlier versions
+**** xref:releases/detail/ssat-v3.10.3-02.adoc[ssat-v3.10.3-02]
+**** xref:releases/detail/ssat-v3.9.4-01.adoc[ssat-v3.9.4-01]
+**** xref:releases/detail/ssat-v3.9.1-03.adoc[ssat-v3.9.1-03]
 ** xref:plugins/index.adoc[Installed Plugins]
 
 
