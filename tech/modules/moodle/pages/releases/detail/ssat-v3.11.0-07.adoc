@@ -142,7 +142,7 @@ see also https://evolutioncode.uk/tiles[full docs]
 
 | filter/filtercodes
 | #New#
-| https://github.com/michael-milette/moodle-filter_filtercodes/tree/723600d1c0d0280fe1a7a7628e68b684935f2bb7[2022031917]
+| https://moodle.org/plugins/filter_filtercodes/2.2.0/24264[2021052200]
 
 https://moodle.org/plugins/filter_filtercodes[docs]
 
