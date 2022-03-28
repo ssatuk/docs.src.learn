@@ -9,6 +9,7 @@ Two key areas in this release:
 * upstream bug fixes and security patches to 18/03/2022
 * adds new functionality via Filter Codes plugin
 
+See also the https://docs.ssatuk.co.uk/elearnstaff/1.0/moodle/releases/ssat-v3.11.0-07.html[companion user release notes]
 
 == Required configuration checks
 
