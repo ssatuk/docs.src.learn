@@ -12,6 +12,12 @@ Two key areas in this release:
 
 == Required configuration checks
 
+=== Enable the filter codes plugin
+
+. Login to Moodle with admin rights
+. Go to `/admin/filters.php` and find the row relating to Filter Codes.
+. Enable for Content (settings will autosave)
+
 === OAuth2 field mapping checks
 
 The code now picks up the field mappings from the UI settings, even for critical fields, so need to make sure they are all set correctly.
