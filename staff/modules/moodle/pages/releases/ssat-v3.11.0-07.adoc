@@ -1,0 +1,231 @@
+= ssat-v3.11.0-07
+
+NOTE: currently only deployed to https://mylearning-stage.ssat.cloud/[staging site]
+
+== Overview
+
+* Upstream bug fixes and security patches to Moodle core and all plugins up to 25/03/2022
+* New plugin installed https://moodle.org/plugins/filter_filtercodes[filter_filtercodes]
+* associated https://ssattechdocs.azurewebsites.net/elearntech/1.0/moodle/releases/detail/ssat-v3.11.0-07.html[technical release notes can be found here]
+
+== Filter Codes plugin
+
+This allows for an element of dynamic content and user personalisation in Moodle content by including {filter codes} in content.
+
+The https://github.com/michael-milette/moodle-filter_filtercodes/blob/master/README.md#list-of-filtercode-tags[list of codes] as at 28/03/2022 is:
+
+=== Profile
+
+* {firstname} : Display the user's first name.
+* {surname} or {lastname} : Display the user's surname (family/last name).
+* {fullname} : Display the user's first name and surname.
+* {alternatename} : Display the user's alternate name. If blank, will display user's first name instead.
+* {city} : Display the user's city.
+* {country} : Display the user's country.
+* {timezone} : Display the user's preferred timezone.
+* {preferredlanguage} : Display the user's preferred language in that language. Because of this, it will be encapulated in an HTML span tag with an appropriately set lang attribute.
+* {email} : Display the user's email address.
+* {userid} or %7Buserid%7D : Display the user's Moodle ID.
+* {idnumber} : Display the user's idnumber from their profile.
+* {username} : Display the user's username.
+* {userdescription} : Display the user's description.
+* {webpage} : Display the user's webpage as seen in their profile.
+* {institution} : Display the name of the institution from the user's profile.
+* {department} : Display the name of the department from the user's profile.
+* {userpictureurl X} : Display the user's profile picture URL. X indicates the size and can be **sm** (small), **md** (medium) or **lg** (large). If the user does not have a profile picture or is logged out, the default faceless profile photo URL will be shown instead.
+* {userpictureimg X} : Generates an <img> html tag containing the user's profile picture. X indicates the size and can be **sm** (small), **md** (medium) or **lg** (large). If the user does not have profile picture or is logged out, the default faceless profile photo will be used instead.
+* {profile_field_shortname} : Display's custom user profile field. Replace "shortname" with the shortname of a custom user profile field all in lowercase. NOTE: Will not display if the custom user profile field's settings are set to **Not Visible**.
+* {profilefullname}: Similar to {fullname} except that it displays a profile owner's name when placed on the Profile page.
+* {firstaccessdate dateTimeFormat} : Date that the user first accessd the site. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+* {lastlogin dateTimeFormat} : Date that the user last logged into the site. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+
+=== System Information
+
+* {filtercodes} : Will display version and release of FilterCodes plugin. Not that this information is only available to those who can edit the tag.
+* {usercount} : Count total number of registered users on the site. Does not included deleted users, primary admin or guest.
+* {usersactive} : Count total number of registered users on the site. Does not included deleted users, disabled users, primary admin or guest.
+* {usersonline} : Total number of users who were online in the last 5 minutes.
+* {userscountrycount} : Total number of countries that users are from according to their profile.
+* {siteyear} : 4-digit current year.
+* {now dateTimeFormat} : Display's the current date. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+* {coursecount} : Total number of courses on this Moodle site (not including Front Page).
+* {diskfreespace} : Display amount of free disk space for application folder. Infinite symbol will be displayed if greater than about 84,703.29 Yottabytes (YB) or failure to get size from operating system.
+* {diskfreespacedata} : Display amount of free disk space for moodledata folder. Infinite symbol will be displayed if greater than about 84,703.29 Yottabytes (YB) or failure to get size from operating system.
+* {wwwroot} : Root URL of the Moodle site.
+* {supportname} : Support name as seen on Site Administration > Server > Support contact.
+* {supportemail} : Support email address as seen on Site Administration > Server > Support contact.
+* {supporturl} : Support page as seen on Site Administration > Server > Support contact.
+
+=== UI Elements
+
+* {teamcards}: Displays photos, name (optionally linked) and optional description of user's who are teachers. Only Verbose format is suitable for use in side-blocks.
+* {coursecards} or {coursecards categoryID}: (ALPHA) Display available courses as cards. You can optionally specify the ID number of a category. Example: {coursecards 1} will only display courses in the default Miscellaneous category. Note: The categoryID is not the "Category ID Number" field that you can optionally specify when creating a category.
+* {coursecardsbyenrol} (ALPHA): Display course cards for most popular courses based on enrolment. Maximum number of cards is configurable in the plugin settings.
+* {courseprogress}: (ALPHA) Displays course progress status in words. Only works within a course.
+* {courseprogressbar}: (ALPHA) Displays course progress status as a status bar. Only works within a course.
+* {categorycards} or {categorycards id}: (ALPHA) Display top level categories as cards using the current location as the top level category. For example, on the Front Page, it will display all top level categories. However, if you are inside the Miscellaneous category (e.g., in Miscellaneous > Your Course) , it will only display the next level of categories under the Miscellaneous category. You can optionally specify a category in the tag.
+* {mycourses} : Display an unordered list of links to all my enrolled courses.
+* {mycoursescards} : Displays a series of cards for my enrolled courses.
+* {courserequest} : Displays a Request a Course link.
+* {label type}{/label} : Display text over background colour. The Boost theme supports the following types: **info**, **important**, **secondary**, **success** and **warning**. Other themes may also support **primary**, **danger**, **light**, **dark** and more. Example: {label info}For your information{/label}. Actual foreground and background colours vary depending on the theme. If the type is not specified, it will default to **info**. If the type specified is not supported by your theme, it may default to secondary.
+* {button URL}Label{/button} : Create a clickable button link formatted like a primary button.
+* {chart radial x Title text} (ALPHA): Create a radial (circle / doughnut) chart given it a value of x between 0 and 100 and a title.
+* {chart pie x Title text} (ALPHA) : Create a pie chart given a value of x between 0 and 100 and a title.
+* {chart progressbar x Title text} (ALPHA) : Create a horizontal progress bar chart giving it a value of x between 0 and 100 and a title.
+* {showmore}{/showmore} (ALPHA) : Toggle showing content between opening and closing more tags. Limitations: Can only be used inline with text. Must now weave into other opening and closing tags.
+* {qrcode}{/qrcode} : Generate and display a QR Code for the content between the tags.
+
+=== For use in courses
+
+* {coursename} : Display the full name of the current course or the site name if not in a course.
+* {coursename ID} : Display the full name of the course specified by the course ID.
+* {courseshortname} : Display the short name of t he current course or the site short name if not in a course.
+* {coursestartdate dateTimeFormat} : Course star t date. Will display "Open event" if there is no start date. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+* {courseenddate dateTimeFormat} : Course end date. Will display "Open event" if there is no end date. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+* {coursecompletiondate dateTimeFormat} : Course completion date. If not completed, will display "Not completed". Will also detect if completion is not enabled. For information on the optional dateTimeFormat format, see Supported dateTimeFormats Formats in the [FAQ](#faq) section of this documentation.
+* {courseprogress}: (ALPHA) Displays course progress status in words.
+* {courseprogressbar}: (ALPHA) Displays course progress status as a status bar.
+* {course_fields}: Displays the custom course fields. NOTE: Respects a custom course field's Visible To setting.
+* {course_field_shortname} : Display's custom course field. Replace "shortname" with the shortname of a custom course field all in lowercase. NOTE: Respects a custom course field's Visible To setting.
+* {coursesummary} : Display's the course summary. If placed in a site page, displays the site summary.
+* {coursesummary ID} : Display's the course summary of the course with the specified course ID number.
+* {courseimage} : Display's the course image.
+* {courseparticipantcount} : Displays the number of students enrolled in the current course.
+* {courseid}  : Display a course's ID.
+* {coursecontextid}  : Display a course's context ID.
+* %7Bcoursemoduleid%7D : Display a course's activity module ID - for use in URLs. Only for use in course activity modules.
+* {courseidnumber} : Display a course's ID number.
+* {sectionid} or %7Bsectionid%7D : Display the section ID (not to be confused with the section number).
+* {sectionname} : Display the section name in which the activity is located.
+* {coursecontacts}: List of course contacts with links to their profiles, email address or messaging or phone number, and their user description (there are settings for these). Note: This tag was formerly called {courseteachers}.
+* {coursegradepercent}: Displays the current accumulated course grade of the student.
+* {mygroups}: Displays a list of groups to which you are a member, separated by a commas+space.
+
+Also see Courses section below.
+
+=== Categories
+
+* {categoryid} : If in a course, the ID of the course's parent category, the category ID of a course category page, otherwise 0.
+* {categoryname} : If in a course, the name of the course's parent category, otherwise blank.
+* {categorynumber} : If in a course, the number of the course's parent category, otherwise blank.
+* {categorydescription} : If in a course, the number of the description of a course's parent category, otherwise blank.
+* {categories} : Display an unordered list of links to all course categories.
+* {categories0} : Display an unordered list of just top level links to all course categories.
+* {categoriesx} : Display an unordered list of other categories in the current category.
+
+=== Custom menu
+
+Note: Filtering must be supported in custom menu by your theme.
+
+* {categoriesmenu} : A second level list of categories with links for use in custom menus.
+* {categories0menu} : A second level list of just top level categories with links for use in custom menus.
+* {categoriesxmenu} : A second level list of other categories in the current category with links for use in custom menus.
+* {toggleeditingmenu} : A Turn Editing On or Turn Editing Off custom menu item. Note that you need to add your own dash(es).
+* {mycoursesmenu} : A second level list of courses with links for use in custom menus .
+* {courserequestmenu0} : Request a course / Course request in a top level custom menu.
+* {courserequestmenu} : Request a course / Course request in submenu.
+* {menuadmin} : Useful dynamic menu for Moodle teachers, managers and administrators.
+* {menudev} : Useful dynamic menu for Moodle developers.
+
+=== URL
+
+* {pagepath} : Path of the current page without wwwroot.
+* {thisurl} : The complete URL of the current page.
+* {thisurl_enc} : The complete encoded URL of the current page.
+* {urlencode}{/urlencode} : URL encodes any content between the tages.
+* {referer} : Referring URL
+* {protocol} : http or https
+* {referrer} : Alias of {referer}
+* {ipaddress} : User's IP Address.
+* {sesskey} or %7Bsesskey%7D : Moodle session key.
+* {wwwcontactform} : Action URL for Contact Form forms. (requires Contact Form plugin).
+
+=== Content
+
+* {global_...} : Use your own custom FilterCodes tags in the filter's settings. This is sometimes referred to as global blocks. An example of this might be if you wanted to define a standardized copyright or other text, email address, website URL, phone number, name, link, support information and more. Define and centrally manage up to 20 global block tags.
+* {note}content{/note} : Enables you to include a note which will not be displayed.
+* {help}content{/help} : Enables you to create popup help icons just like Moodle does.
+* {info}content{/info} : Enables you to create popup help icons just like the popup Help icons but with an "i" information icon.
+* {alert style}content{/alert}: (ALPHA) Creates an alert box containing the specified content. You can change the style by specifying an optional parameter. Example: **{alert primary}** or **{alert success}**. [List of styles](https://getbootstrap.com/docs/4.0/components/alerts/)
+* {highlight}{/highlight} : Highlight text like a highlighter in bright yellow. NOTE: Must only be used within a paragraph.
+* {marktext}{/marktext} : Highlight text using HTML5's mark tag. You can style this tag using CSS in your theme using a fc-marktext class.
+* {markborder}{/markborder} : Surrounds text with a red dashed border. You can style this tag using CSS in your theme using a fc-markborder class (border and padding with !important to override).
+* {scrape url="..." tag="..." class="..." id="..." code="..."} : Scrapes the content from another web page. Must be enabled in FilterCodes settings.
+* {getstring:component_name}stringidentifier{/getstring} or {getstring}stringidentifier{/getstring}: Display a Moodle language string in the current language. If no component name (plugin) is specified, will default to "moodle".
+* {fa/fas/far/fal fa-...} : Insert FontAwesome icon. Note: FontAwesome Font/CSS must be loaded as part of your theme.
+* {glyphicon glyphicon-...} : Insert Glyphicons icon. Note: Glyphicons Font/CSS must be loaded as part of your theme.
+
+=== Contact Form templates
+
+The following tags are replaced by Contact Form templates and therefore require that you have the Contact Form for Moodle plugin installed.
+
+* {formquickquestion} : Adds a "quick question" form to your course. Form includes Subject and Message fields. Note: User must be logged in or the form will not be displayed.
+* {formcontactus} : Adds a "Contact Us" form to your site (example: in a page). Form includes Name, Email address, Subject and Message fields.
+* {formcourserequest} : Adds a "Course Request" form to your site (example: in a page). Unlike Moodle's request-a-course feature where you can request to create your own course, this tag allows users to request that a course they are interested in be created. Could also be used to request to take a course. Form includes Name, Email address, Course name, Course Description.
+* {formsupport} : Adds a "Support Request" form to your site (example: in a page). Form includes Name, Email address, pre-determined Subject, specific Subject, URL and Message fields.
+* {formcheckin} : Adds a "I'm here!" button to your to your course. Form does not include any other fields. Note: User must be logged in or the button will not be displayed.
+
+=== Useful for creating Custom Contact Forms and Links
+
+* {lang} : 2-letter language code of current Moodle language.
+* {recaptcha} : Display the ReCAPTCHA field - for use with Contact Form for Moodle. Note: Will be blank if user is logged-in using a non-guest account.
+* {readonly} : To be used within form input fields to make them read-only if the user is logged-in.
+* {editingtoggle} : "off" if in edit page mode. Otherwise "on". Useful for creating Turn Editing On/Off links.
+* {wwwcontactform} : Action URL for Contact Form forms. (requires Contact Form plugin).
+* {formsesskey} : Not a form. This can be used instead of having to insert the required hidden input field and JavaScript Snippet.
+
+=== Conditionally display content filters (All versions of Moodle)
+
+Note: {if*rolename*} and {ifmin*rolename*} type tags are based on role archetypes, not role shortnames. For example, you could have a role called *students* but, if the archetype for the role is *teacher*, the role will be identified as a *teacher*. Roles not based on archetypes will not with these tags.
+
+==== Logged in/out
+
+* {ifloggedin}{/ifloggedin} : Will display the enclosed content only if the user is logged in as non-guest.
+* {ifloggedout}{/ifloggedout} : Will display the enclosed content only if the user is logged out or is loggedin as guest.
+* {ifloggedinas}{/ifloggedinas} : Will display the enclosed content only if you are logged-in-as (loginas) a different user.
+* {ifnotloggedinas}{/ifnotloggedinas} : Will display the enclosed content only if you are logged-in as yourself and not a different user.
+
+==== Courses
+
+* {ifenrolled}{/ifenrolled} : Will display the enclosed content only if the user **is** enrolled as **a student** in the current course. This tag does not take any other roles into consideration.
+* {ifnotenrolled}{/ifnotenrolled} : Will display the enclosed content only if the user is **not** enrolled as **a student** in the current course. This tag does not take any other roles into consideration.
+* {ifincourse}{/ifincourse} : Will display the enclosed content only if the user is in a course other than the Front page.
+* {ifinsection}{/ifinsection} : Will display the enclosed content only if the user is in a section of a course which is not the Front Page.
+* {ifnotinsection}{/ifnotinsection} : Will display the enclosed content only if the user is not in a section of a course.
+* {ifingroup id|idnumber}{/ifingroup} : Display content if the user is part of the specified course group ID or group ID number.
+* {ifnotvisible}{/ifnotvisible} : Display content if the course visibility is set to Hide.
+* {ifinactivity}{/ifinactivity} : Display content only in course activities.
+* {ifnotinactivity}{/ifnotinactivity} : Display content only when not in a course activity.
+* {ifactivitycompleted id}{/ifactivitycompleted} : Display content if the activity module specified by the id (see the activity's URL id= parameter), has been completed. Requires that completion be enabled for the site, the course and configured in the specified activity. Note: Activity IDs change when you copy or restore a course. In such cases, you will need to manually edit and correct the IDs in the tags to reflect the new activity id numbers so as to restore their functionality.
+* {ifnotactivitycompleted id}{/ifnotactivitycompleted} : Display content if the activity module specified by the id (see the activity's URL id= parameter), has NOT been completed. Requires that completion be enabled for the site, the course and configured in the specified activity. Note: Activity IDs change when you copy or restore a course. In such cases, you will need to manually edit and correct the IDs in the tags to reflect the new activity id numbers so as to restore their functionality.
+
+==== Roles
+
+* {ifguest}{/ifguest} : Will display the enclosed content only if the user is logged-in as guest.
+* {ifstudent}{/ifstudent} : Will display the enclosed content only if the user is logged-in and enrolled in the course (no other roles).
+* {ifassistant}{/ifassistant} : Will display the enclosed content only if the user is logged-in as a non-editing teacher in the current course.
+* {ifminassistant}{/ifminassistant} : Will display the enclosed content only if the user is logged-in as a non-editing teacher or above in the current course.
+* {ifteacher}{/ifteacher} : Will display the enclosed content only if the user is logged-in as a teacher in the current course.
+* {ifminteacher}{/ifminteacher} : Will display the enclosed content only if the user is logged-in as a teacher or above in the current course.
+* {ifcreator}{/ifcreator} : Will display the enclosed content only if the user is logged-in as a course creator.
+* {ifmincreator}{/ifmincreator} : Will display the enclosed content only if the user is logged-in as a course creator or above.
+* {ifmanager}{/ifmanager} : Will display the enclosed content only if the user is logged-in as a manager.
+* {ifminmanager}{/ifminmanager} : Will display the enclosed content only if the user is logged-in as a manager or above.
+* {ifminsitemanager}{/ifminsitemanager} : Will display the enclosed content only if the user is logged-in as a site manager or above.
+* {ifadmin}{/ifadmin} : Will display the enclosed content only if the user is logged-in as an administrator.
+* {ifcustomrole roleshortname}{/ifcustomrole} : Will display enclosed content only if the user has the custom role specified by its shortname within the current context.
+* {ifnotcustomrole roleshortname}{/ifnotcustomrole} : Will display enclosed content only if the user does not have the custom role specified by its shortname within the current context.
+* {ifincohort CohortID|idnumber}{/ifincohort} : Will display enclosed content only if user is a member of the specified cohort. You can specify the Cohort ID in your cohort settings or its ID number. Cohort ID can contain a combination of letters from a to z, A to Z, numbers 0 to 9 and underscores. It will not work if it contains spaces, dashes or other special characters.
+
+==== Miscellanious
+
+* {ifdev}{/ifdev} : Will display the enclosed content only if the user is logged-in as an administrator and developer debugging mode is enabled.
+* {ifhome}{/ifhome} : Will display the enclosed content only if the user is on the Moodle Home Front Page.
+* {ifnothome}{/ifnothome} : Will not display the enclosed content if the user is on the Moodle Home Front Page.
+* {ifdashboard}{/ifdashboard} : Will display the enclosed content only if the user is on the Moodle Dashboard.
+* {ifcourserequests}{/ifcourserequests} : Will display enclosed contents only if the Request a Course feature is enabled.
+* {ifeditmode}{/ifeditmode} : Will display the enclosed content only if editing mode is turned on.
+* {ifprofile_field_shortname}{/ifprofile_field_shortname} : Will display the enclosed content if the custom user profile field is not blank/zero.
+
+If the condition is not met in the particular context, the specified tag and it's content will be removed.
+
