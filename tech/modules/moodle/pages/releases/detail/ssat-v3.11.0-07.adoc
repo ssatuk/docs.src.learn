@@ -63,7 +63,7 @@ Updated versions of the impacted classes have been copied onto the https://bitbu
 
 == Moodle core updates
 
-https://ssatuk.atlassian.net/browse/LMS-113[LMS-113] Merge Moodle upstream fixes up to 3.11.6+ of 22/03/2022
+https://ssatuk.atlassian.net/browse/LMS-113[LMS-113] Merge Moodle upstream fixes up to 3.11.6+ of 25/03/2022
 
 __see <<SSAT code changes>> for area to watch__
 
@@ -128,7 +128,10 @@ a| https://github.com/catalyst/moodle-tool_webanalytics/pull/47[2021122300]
 
 | blocks/point_view
 | Updated
-| https://github.com/QuentinFombaron/moodle-block_point_view/tree/04ce7abe7042aa058b0a727740db614c495b629b[2021100501]
+| v1.6.5 / 2022022800 
+
+https://moodle.org/plugins/block_point_view/v1.6.5/26065[release notes]
+
 
 see also https://moodle.org/plugins/block_point_view[docs]
 
