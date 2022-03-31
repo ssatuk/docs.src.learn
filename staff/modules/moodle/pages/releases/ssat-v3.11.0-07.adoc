@@ -1,7 +1,5 @@
 = ssat-v3.11.0-07
 
-NOTE: currently only deployed to https://mylearning-stage.ssat.cloud/[staging site]
-
 == Overview
 
 * Upstream bug fixes and security patches to Moodle core and all plugins up to 25/03/2022
