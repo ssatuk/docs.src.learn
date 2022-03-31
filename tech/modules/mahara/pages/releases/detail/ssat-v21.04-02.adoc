@@ -1,0 +1,20 @@
+= SSAT Mahara Build ssat-v21.04-02
+
+== Overview
+
+This is a maintenance relase, bringing forward our core Mahara version from 21.04.01 to 21.04.03, including all fixes to 09-02-2022
+
+Mahara 21.04 remains in support until October 2022
+
+== Details
+
+The list of upstream bug fixes can be found at
+
+- https://launchpad.net/mahara/+milestone/21.04.2[21.04.2]
+- https://launchpad.net/mahara/+milestone/21.04.3[21.04.3]
+
+
+No changes to plugins.
+
+
+
