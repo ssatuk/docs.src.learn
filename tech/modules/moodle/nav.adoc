@@ -12,6 +12,7 @@
 *** xref:development/testing.adoc[Testing]
 *** xref:development/references.adoc[Other sources of information]
 ** xref:releases/index.adoc[Release Notes]
+*** xref:releases/detail/ssat-v3.11.0-08.adoc[ssat-v3.11.0-08]
 *** xref:releases/detail/ssat-v3.11.0-07.adoc[ssat-v3.11.0-07]
 *** xref:releases/detail/ssat-v3.11.0-06.adoc[ssat-v3.11.0-06]
 *** xref:releases/detail/ssat-v3.11.0-05.adoc[ssat-v3.11.0-05]
