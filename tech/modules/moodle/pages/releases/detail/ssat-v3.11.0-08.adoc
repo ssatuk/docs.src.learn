@@ -34,5 +34,6 @@ https://ssatuk.atlassian.net/browse/LMS-124[LMS-124] Merge Moodle upstream fixes
 * https://ssatuk.atlassian.net/browse/LMS-127[LMS-127] Update MDL plugin /admin/tool/objectfs 2021122300 -> 2022070400 https://github.com/catalyst/moodle-tool_objectfs/commits/MOODLE_310_STABLE[Changes]
 * https://ssatuk.atlassian.net/browse/LMS-128[LMS-128] Update MDL plugin webservice_restful 2021030400 -> 2022052500 https://github.com/catalyst/moodle-webservice_restful/commits/master[changes]
 * https://ssatuk.atlassian.net/browse/LMS-129[LMS-129] Update MDL plugin local_aws 2022011301 -> 2022033100 https://github.com/catalyst/moodle-local_aws/commits/master[changes]
+* https://ssatuk.atlassian.net/browse/LMS-130[LMS-130] Update MDL plugin local_course_templates 2021121501 -> 2022033100 https://github.com/emeneo/moodle-local_course_templates/commits/v.3.11-e[changes]
 
 
