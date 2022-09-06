@@ -1,3 +1,4 @@
 = Mahara releases
 
+* releases/detail/ssat-v22.04-02.adoc[ssat-v22.04-02]
 * releases/detail/ssat-v21.04-02.adoc[ssat-v21.04-02]
