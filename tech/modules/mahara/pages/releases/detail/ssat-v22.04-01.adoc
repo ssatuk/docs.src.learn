@@ -29,5 +29,7 @@ No SSAT changes to extensions.
 
 SSAT Theme updated to work with 22.04
 
+=== See also
 
+https://docs.ssatuk.co.uk/elearnstaff/1.0/mahara/changes/detail/ssat-v22.04-01.html[User release note]
 
