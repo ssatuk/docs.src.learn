@@ -2,7 +2,7 @@
 
 == Overview
 
-This is a major version upgrade, upgrading our platform from Mahara 21.04.03 to 22.04.02, including all vendor-released fixes to 16-09-2022
+This is a major version upgrade, upgrading our platform from Mahara 21.04.03 to 22.04.02, including all vendor-released fixes to 16-06-2022
 
 Mahara 22.04 remains in support until October 2023
 
@@ -16,9 +16,9 @@ See https://manual.mahara.org/en/22.04/new.html[the product manual]
 
 The list of upstream bug fixes can be found at
 
-- https://launchpad.net/mahara/+milestone/22.04.0[21.04.0]
-- https://launchpad.net/mahara/+milestone/22.04.1[21.04.1]
-- https://launchpad.net/mahara/+milestone/22.04.2[21.04.2]
+- https://launchpad.net/mahara/+milestone/22.04.0[22.04.0]
+- https://launchpad.net/mahara/+milestone/22.04.1[22.04.1]
+- https://launchpad.net/mahara/+milestone/22.04.2[22.04.2]
 
 
 === Extensions
