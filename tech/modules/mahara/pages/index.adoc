@@ -1,4 +1,4 @@
 = Mahara technical documentation
 
-(placeholder)
+* xref:releases/index.adoc[Releases]
 
