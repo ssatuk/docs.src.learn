@@ -1,0 +1,3 @@
+= Mahara release notes for users
+
+* xref:changes/detail/ssat-v22.04-01.adoc[ssat-v22.04-01]
