@@ -10,3 +10,5 @@
 **** xref:examples/create-the-page.adoc[Create the page]
 **** xref:examples/add-content-to-page.adoc[Add content to a page]
 **** xref:examples/share-a-page.adoc[Share a page]
+** Changes
+*** xref:changes/detail/ssat-v22.04-01.adoc[ssat-v22.04-01]
