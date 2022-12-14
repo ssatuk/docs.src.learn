@@ -1,0 +1,22 @@
+= ssat-v3.11.0-10
+
+== Summary
+
+Two key areas in this release:
+
+* Moodle upstream update to 3.11.10+ including bug fixes and security patches to 30/09/2022
+* plugin updates
+
+
+== Moodle core updates
+
+Merge Moodle upstream fixes up to 3.11.10+ of 30/09/2022
+
+* Moodle upstream update to 3.11.10+ including bug fixes and security patches to 30/09/2022
+** https://moodledev.io/general/releases/3.11/3.11.10[Moodle 3.11.10]
+
+== Plugin updates
+
+*  Update MDL plugin /admin/tool/objectfs => 2022070401 https://github.com/catalyst/moodle-tool_objectfs/commits/MOODLE_310_STABLE[Changes]
+
+

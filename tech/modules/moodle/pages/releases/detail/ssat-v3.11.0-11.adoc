@@ -1,0 +1,27 @@
+= ssat-v3.11.0-11
+
+== Summary
+
+Two key areas in this release:
+
+* Moodle upstream update to 3.11.11+ including bug fixes and security patches to 09/12/2022
+* plugin updates
+
+
+== Moodle core updates
+
+Merge Moodle upstream fixes up to 3.11.11+ of 09/12/2022
+
+* Moodle upstream update to 3.11.11+ including bug fixes and security patches to 09/12/2022
+** https://moodledev.io/general/releases/3.11/3.11.11[Moodle 3.11.11]
+
+== Plugin updates
+
+* https://ssatuk.atlassian.net/browse/LMS-125[LMS-125] Update Filter Codes plugin (moodle-filter_filtercodes) to v2.3.1 https://github.com/michael-milette/moodle-filter_filtercodes/blob/master/CHANGELOG.md[external release notes]
+* https://ssatuk.atlassian.net/browse/LMS-126[LMS-126] Update MDL plugin Outage manager 2022011400 -> 2022051200
+* https://ssatuk.atlassian.net/browse/LMS-127[LMS-127] Update MDL plugin /admin/tool/objectfs 2021122300 -> 2022070400 https://github.com/catalyst/moodle-tool_objectfs/commits/MOODLE_310_STABLE[Changes]
+* https://ssatuk.atlassian.net/browse/LMS-128[LMS-128] Update MDL plugin webservice_restful 2021030400 -> 2022052500 https://github.com/catalyst/moodle-webservice_restful/commits/master[changes]
+* https://ssatuk.atlassian.net/browse/LMS-129[LMS-129] Update MDL plugin local_aws 2022011301 -> 2022033100 https://github.com/catalyst/moodle-local_aws/commits/master[changes]
+* https://ssatuk.atlassian.net/browse/LMS-130[LMS-130] Update MDL plugin local_course_templates 2021121501 -> 2022033100 https://github.com/emeneo/moodle-local_course_templates/commits/v.3.11-e[changes]
+
+

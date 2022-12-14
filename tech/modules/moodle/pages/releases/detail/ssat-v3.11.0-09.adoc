@@ -1,0 +1,19 @@
+= ssat-v3.11.0-10
+
+== Summary
+
+Two key areas in this release:
+
+* Moodle release 3.11.10
+* add plugin tool-coursearchiver
+
+
+== Moodle core updates
+
+* Merge Moodle release https://moodledev.io/general/releases/3.11/3.11.10[Moodle 3.11.10]
+
+== Plugin updates
+
+*  https://ssatuk.atlassian.net/browse/LMS-132[LMS-132 Add Course Archiver plugin] (https://moodle.org/plugins/tool_coursearchiver[docs])
+
+
