@@ -8,7 +8,10 @@ NOTE: for technical release notes please see https://ssattechdocs.azurewebsites.
 |SSAT Release
 |Date
 
-|xref:releases/ssat-v3.11.0-07.adoc[ssat-=v3.11.0-07]
+|xref:releases/ssat-v4.1.0-01.adoc[ssat-v4.1.0-01]
+|04/01/2023
+
+|xref:releases/ssat-v3.11.0-07.adoc[ssat-v3.11.0-07]
 |28/03/2022
 
 |xref:releases/ssat-v3.11.0-03.adoc[ssat-v3.11.0-03]

@@ -1,0 +1,92 @@
+= MyLearning release ssat-v4.1.0-01
+
+== Overview
+
+This is a major update to MyLearning, bringing the Moodle platform to the latest, version 4.1 (including the major changes for version 4.0).
+
+== Moodle version 4
+
+=== User interface improvements
+
+Moodle 4 contains significant improvements to the user interface, including 
+
+* enhanced timeline and calendar on **Dashboard** page  
++
+__this means sensible open and close dates for courses, and (where applicable) dates on activities is much more important for the delegate experience__
+* a new page **My Courses** which shows all courses a delegate is registered on
+* within each course a collapsible course index in the left-hand navigation
+* an expandable "block drawer" in the right hand margin - individual course teachers can customise what blocks appear in this draw for their course
+* collapsible course sections
+* a much clearer "Edit mode" switch for course teachers & managers
++
+image::v4-edit-mode.png[]
+
+This video contains an overview of how to find your way around the new interface:
+
+video::Io8ZqAOnAsw[youtube]
+
+=== Big Blue Button
+
+Moodle 4 provides the capability to integrate with Big Blue Button live web conferencing from within courses. We have currently disabled this feature pending review within SSAT.
+
+=== Other changes
+
+- Improvements to Quiz and Question Bank
+
+- the option to set a time limit on Assignments
+
+- In order to inform teaching decisions, Report Builder, a feature of Moodle Workplace, has been incorporated into Moodle 4.0. 
+Managers can generate improved system-level and custom reports allowing educators to measure student progress, analyse the impact and improve learning programs.
+
+=== Further information
+
+A https://docs.moodle.org/400/en/New_features[full list of new features] can be found in the Moodle documentation
+
+
+== Moodle version 4.1
+
+Moodle version 4.1 is a "Long Term Support" release - this will continue to receive feature patches until November 2023 and security patches until November 2025, an important consideration to help us manage the support workload for this platform.
+
+=== Database activity
+
+Improvements to the user experience of the Database activity, including a useful start page, an improved Image gallery preset, plus three new presets: Journal, Proposals and Resources, which can be previewed. These four ready-made presets mean that you can use and adapt one of the four on offer to fit your needs, without having to build a layout from nothing.
+
+
+video::hFEP-V7hUjo[youtube]
+
+=== Gradebook
+
+UX improvements have also been made to the Gradebook to make it easier to navigate. With Moodle LMS 4.1, a new 'Grades summary' page has been added to provide a summary of the grade averages for each course activity and can be filtered by activity. 
+There is an improved 'User report' with a more modern design and collapsible categories, and a 'Single view report'’ with improved design and the ability to simply search by user, group or grade item, and more easily do bulk actions. 
+This allows teachers and trainers to more easily analyse the success of formative and summative assessment and inform improvements to course design.
+
+video::NLkzWNN-MyA[youtube]
+
+=== Custom reports
+
+Custom reports now include a number of new useful report sources, including Badges, Comments, Notes, Course participants, Blogs, and Files. There is a new custom report settings page, allowing the admin to limit the number of reports and disable live editing.
+
+video::5InHkTYT4wk[youtube]
+
+=== Further information
+
+A https://docs.moodle.org/401/en/New_features[full list of new features in 4.1] can be found in the Moodle documentation, and a quick overview can be seen in this video:
+
+
+video::4_r2GaOnW28[youtube]
+
+
+== Updates to SSAT Theme
+
+There have been a couple of minor updates to the SSAT theme to take advantage of the new user interface.
+
+- updated icon in top left to match overall theme design
+- use of SSAT brand colour as primary highlight
+- improved login screen:
+
+image::v4-login-screen.png[]
+
+== Other resources
+
+* https://moodle.academy/[Moodle Academy free online training]
+* https://www.youtube.com/playlist?list=PLxcO_MFWQBDdxi4VkQpzm_8qV1EOSConb[YouTube playlist - Moodle Academy]
