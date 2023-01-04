@@ -15,7 +15,7 @@ Moodle 4 contains significant improvements to the user interface, including
 __this means sensible open and close dates for courses, and (where applicable) dates on activities is much more important for the delegate experience__
 * a new page **My Courses** which shows all courses a delegate is registered on
 * within each course a collapsible course index in the left-hand navigation
-* an expandable "block drawer" in the right hand margin - individual course teachers can customise what blocks appear in this draw for their course
+* an expandable "block drawer" in the right hand margin - individual course teachers can customise what blocks appear in this drawer for their course
 * collapsible course sections
 * a much clearer "Edit mode" switch for course teachers & managers
 +
