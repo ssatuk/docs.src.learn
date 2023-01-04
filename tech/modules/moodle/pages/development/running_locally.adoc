@@ -1,46 +1,89 @@
 = Running local development server
 
-WARNING: This is out of date, we now have an approach that uses WSL2 and Docker, notes to be updated
+== Overview
 
-1. install https://www.virtualbox.org/wiki/Downloads[Virtualbox] 
-2. install https://www.vagrantup.com/docs/installation/[Vagrant]
-3. install https://windows.php.net/download/[php] on your machine (this is only needed for the workaround in 6 below)
-4. install custom configuration, running in a Git Bash shell with admin privileges:
-+
-----
-mkdir ~/vagrant
-cd ~/vagrant
-git clone git@github.com:ssatuk/moodle-vagrant.git 
-git checkout v2
-cd ./moodle-vagrant
-vagrant up --provision
-----
-+
-5. wait a while - get a cup of coffee!
-6. because of Timeout restrictions while provisioning the Vagrant VM, we don't clone the moodle code into the newly created site, so you need to do the following:
-+
-----
-cd ~/vagrant/moodle-vagrant  #adjust to suit your location
-vagrant ssh  #this logs into the VM
-cd /srv/www/ssatmoodle
-git clone git@bitbucket.org:ssat/moodle.git htdocs  #get coffee!
-cd htdocs
-git checkout ssat-3.7.0-integration
-git submodule update --recursive
-----
-+
-7. To finish installing moodle:
-+
-----
-# still while SSH'd in to the VM
-cd /srv/www/ssatmoodle/htdocs
-sudo -u www-data /usr/bin/php admin/cli/install.php --lang=en --wwwroot=http://ssatmoodle.test --dataroot=/srv/moodledata/ssatmoodle --dbname=ssatmoodle --dbuser=moodle --dbpass=moodle --adminpass=root --adminemail=nobody@nowhere.com --fullname="Moodle Dev" --shortname=ssatmoodle --dbtype=mariadb --non-interactive --agree-license
+This page describes how to get a local Moodle devleopment environment up and running on a Windows workstations using WSL2 and Docker.
 
-exit #log out of VM
-----
+== Prerequisites
+
+* ensure you have a working linux distribution via WSL2 (recommended is Ubuntu 22.04)
+* ensure Docker Desktop is working on your windows machine
+
+== Setup 
+
+* log in to your linux distribution in Windows Terminal +
+we assume you use bash as your shell
+* clone a copy of the https://bitbucket.org/ssat/moodle.git[SSAT Moodle repository] into a linux directory e.g. ~/moodle. +
+We will refer to this directory as `MOODLESOURCEDIR`
+* cd into `MOODLESOURCEDIR` and checkout the current integration branch `**{mdl-integration-branch}**`
+* `git submodule init`
+* `git submodule update --recursive`
+* edit ~/.bashrc and set an environment variable that points to the `MOODLESOURCEDIR`
 +
-8. Visit http://ssatmoodle.test in your browser and you should see Moodle
-9. Normal development - because of Vagrant shared folders you can work with code editing and git in `~/vagrant/moodle-vagrant/www/ssatmoodle/htdocs` and the changes are reflected in the directory the VM serves moodle content from 
+```
+export MOODLE_DOCKER_WWWROOT=/full/path/to/MOODLESOURCEDIR
+```
+* also in ~/.bashrc set an enviroment varibale for database type
++
+```
+export MOODLE_DOCKER_DB=pgsql
+```
+* `source ~/.bashrc` to set the environment variables
+* clone a copy of the   https://github.com/ssatuk/moodle-docker.git[SSAT version of Moodle Docker respository] into another directory e.g. ~/moodledocker +
+We will refer to this directory as `MOODLEDOCKERDIR`
+* cd into `MOODLEDOCKERDIR`
+* `git checkout ssat`
+* touch `local.yml`
+* edit `local.yml` to add the following content:
++
+```
+version: "2"
+services:
+  pgadmin:
+    image: dpage/pgadmin4:6.17
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: you@ssatuk.co.uk
+      PGADMIN_DEFAULT_PASSWORD:  secret
+      PGADMIN_LISTEN_PORT: 80
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "8090:80/tcp"
+    volumes:
+      - "pgadmin-data:/var/lib/pgadmin"
+    
+volumes:
+  pgadmin-data:
+```
+* Ensure customized config.php for the Docker containers is in place +
+`cp config.docker-template.php $MOODLE_DOCKER_WWWROOT/config.php`
 
+== Operation
 
+=== starting up
 
+* Start the containers +
+`bin/moodle-docker-compose up -d`
+
+After a wait for the containers to build, you should be able to access the web front end of Moodle at `http://localhost:8000/` - follow the configuration prompts to set it up.
+
+=== Stopping
+
+In `MOODLEDOCKERDIR` type: +
+`bin/moodle-docker-compose stop`
+
+This will stop the containers but leave them configured - next time you run `bin/moodle-docker-compose up` you should start where you left off
+
+=== Destroying the setup
+
+In `MOODLEDOCKERDIR` type: +
+`bin/moodle-docker-compose down`
+
+This will stop the containers and destroy them - next time you can start from scratch +
+`bin/moodle-docker-compose up -d`
+
+== Editing code
+
+Any changes that you make in `MOODLEDIR` will be reflected in the running containers.
+
+CAUTION: Moodle only supports version increases, you cannot downgrade an existing installation to an earlier version
