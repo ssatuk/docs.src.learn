@@ -1,5 +1,6 @@
 = SSAT Moodle Release Notes
 
+* xref:releases/detail/ssat-v4.1.0-01.adoc[ssat-v4.1.0-01 (03/01/2023)]
 * xref:releases/detail/ssat-v3.11.0-11.adoc[ssat-v3.11.0-11   (14/12/2022)]
 * xref:releases/detail/ssat-v3.11.0-10.adoc[ssat-v3.11.0-10   (30/09/2022)]
 * xref:releases/detail/ssat-v3.11.0-09.adoc[ssat-v3.11.0-09   (13/09/2022)]

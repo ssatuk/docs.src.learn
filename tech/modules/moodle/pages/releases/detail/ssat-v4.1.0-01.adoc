@@ -1,0 +1,170 @@
+= MyLearning release ssat-v4.1.0-01
+
+== Overview
+
+This is a major update to MyLearning, bringing the Moodle platform to the latest, version 4.1 (including the major changes for version 4.0).
+
+As a consequence of being based on a new major version, the branches for integration and deployment have changed - see <<Branches>>
+
+== Upstream release notes
+
+* https://moodledev.io/general/releases/4.0[Moodle 4.0.0]
+* https://moodledev.io/general/releases/4.0/4.0.1[Moodle 4.0.1]
+* https://moodledev.io/general/releases/4.0/4.0.2[Moodle 4.0.2]
+* https://moodledev.io/general/releases/4.0/4.0.3[Moodle 4.0.3]
+* https://moodledev.io/general/releases/4.0/4.0.4[Moodle 4.0.4]
+* https://moodledev.io/general/releases/4.0/4.0.5[Moodle 4.0.5]
+* https://moodledev.io/general/releases/4.1[Moodle 4.1]
+
+== Changes to SSAT Theme
+
+The SSAT theme (`theme/ssat`) has been upgraded to work with the new UI, and is now a fully standalone theme (not a child of Boost).
+
+The following settings are needed in https://mylearning.ssat.cloud/admin/settings.php?section=themesettingssat[Theme Settings] when first configuring this theme:
+
+* Set brand colour to `#A51C37`
+
+
+== Branches
+
+As this release is based on a new upstream major release, there are some new branches in the repository:
+
+=== New SSAT branches
+
+[%header,cols="1,1,2"]
+|===
+|Branch
+|Start point
+|Purpose
+
+|`ssat-4.1.0-integration`
+|`v4.1.0`
+|Main integration branch for upstream changes, local changes and submodules for plugins, used as source for staging site
+
+|`ssat-4.1.0-deployment`
+|`v4.1.0`
+|Production deployment branch, always points to a stable commit on `ssat-4.1.0-integration`
+
+|`ssat-4.1.0-oauth2`
+|`v4.1.0`
+|SSAT changes to OAuth2 functionality in Moodle core, merged into `ssat-4.1.0-integration`
+
+|===
+
+=== Upstream branches
+
+[%header,cols="1,1,2"]
+|===
+|Branch
+|Start point
+|Purpose
+
+|`MOODLE_401_STABLE`
+|`v4.1.0`
+|Upstream fixes - pull from `upstream/MOODLE_401_STABLE`, push to `origin/MOODLE_401_STABLE`, periodically merge into `ssat-4.1.0-integration`
+
+
+|===
+
+== Submodules
+
+There are no new submodules, but for a couple of plugins we (or the upstream vendor)  have added new branches with version 4 compatible code.
+
+The updated list of submodules is:
+
+[%header,cols="1,1,1,2a,2a"]
+|===
+|Plugin
+|Path
+|Branch
+|Origin
+|Upstream
+
+|assignsubmission_maharaws
+|mod/assign/submission/maharaws
+|ssat
+|git@github.com:ssatuk/assignsubmission-maharaws.git
+|https://github.com/catalyst/assignsubmission-maharaws.git
+
+|auth_outage
+|auth/outage
+|MOODLE_39_STABLE
+|https://github.com/catalyst/moodle-auth_outage.git
+|n/a
+
+|block_point_view
+|blocks/point_view
+|SSAT
+|git@github.com:ssatuk/moodle-block_point_view.git
+|https://github.com/QuentinFombaron/moodle-block_point_view.git & +
+ git@github.com:Astor-Bizard/moodle-block_point_view.git
+
+|local_azure_storage
+|local/azure_storage
+|ssat-production
+|git@bitbucket.org:ssat/moodle-local_azure_storage.git
+|https://github.com/catalyst/moodle-local_azure_storage.git
+
+|local_aws
+|local/aws
+|ssat-production
+|git@bitbucket.org:ssat/moodle-local_aws.git
+|https://github.com/catalyst/moodle-local_aws.git
+
+|local_cohortrole
+|local/cohortrole
+|master
+|git@github.com:ssatuk/moodle-local_cohortrole.git
+|https://github.com/paulholden/moodle-local_cohortrole.git
+
+
+|mod_customcert
+|mod/customcert
+|MOODLE_400_STABLE
+|git@github.com:ssatuk/moodle-mod_customcert.git
+|https://github.com/mdjnelson/moodle-mod_customcert.git
+ 
+|tool_objectfs
+|admin/tool/objectfs
+|ssat-production
+|git@bitbucket.org:ssat/moodle-tool_objectfs.git
+|https://github.com/catalyst/moodle-tool_objectfs.git
+
+|tool_trigger
+|admin/tool/trigger
+|ssat-production
+|git@bitbucket.org:ssat/moodle-tool_trigger.git
+|https://github.com/catalyst/moodle-tool_trigger.git
+ 
+|tool_webanalytics"]
+|admin/tool/webanalytics
+|master
+|git@github.com:ssatuk/moodle-tool_webanalytics.git
+|https://github.com/catalyst/moodle-tool_webanalytics.git
+
+|theme_ssat
+|theme/ssat
+|MOODLE_400
+|git@bitbucket.org:ssat/moodle-theme_ssat.git
+|n/a
+
+|webservice_restful
+|webservice/restful
+|ssat_production
+|git@bitbucket.org:ssat/moodle-webservice_restful.git
+|https://github.com/catalyst/moodle-webservice_restful.git
+
+
+|===
+
+== Further information
+
+* https://docs.ssatuk.co.uk/elearnstaff/1.0/moodle/releases/ssat-v4.1.0-01.html[SSAT internal user release note]
+
+== Other documentation changes
+
+Updated:
+
+* xref:procedures/moodle-upgrade.adoc[Upgrading Moodle on server]
+* xref:development/branching.adoc[Use of branches]
+* xref:development/scenarios.adoc[Specific scenarios]

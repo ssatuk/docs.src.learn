@@ -32,9 +32,9 @@ To understand how the core Moodle team use branches, and by extension how we use
 
 For further background see also:
 
-* https://docs.moodle.org/dev/Releases[Detailed Moodle release list]
-* https://docs.moodle.org/dev/Process[Moodle Core team development process]
-* https://docs.moodle.org/dev/Release_process[Moodle Release process]
+* https://moodledev.io/general/releases[Detailed Moodle release list]
+* https://moodledev.io/general/development/process[Moodle Core team development process]
+* https://moodledev.io/general/development/process/release[Moodle Release process]
 
 
 == How Moodle core team use branches and tags

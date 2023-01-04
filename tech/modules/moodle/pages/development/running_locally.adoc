@@ -1,6 +1,6 @@
 = Running local development server
 
-WARNING: This is out of date, we have an improved vagrantfile repo available, notes to be updated
+WARNING: This is out of date, we now have an approach that uses WSL2 and Docker, notes to be updated
 
 1. install https://www.virtualbox.org/wiki/Downloads[Virtualbox] 
 2. install https://www.vagrantup.com/docs/installation/[Vagrant]
