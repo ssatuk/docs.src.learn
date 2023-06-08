@@ -1,0 +1,32 @@
+= MyLearning release ssat-v4.1.0-03
+
+== Overview
+
+Minor security updates and plugin updates.
+
+== Details
+
+Please see linked Jira tickets for detailed changelog.
+
+
+[discrete]
+=== Epic
+
+https://ssatuk.atlassian.net/browse/LMS-151[LMS-151] Update Moodle ssat-v4.1.0-03
+
+[discrete]
+=== Story
+
+https://ssatuk.atlassian.net/browse/LMS-152[LMS-152] Moodle update core to latest 4.1.3+ @ 20230602
+
+https://ssatuk.atlassian.net/browse/LMS-153[LMS-153] Moodle update plugin mod_customcert 4.0.3 => 4.1.1
+
+https://ssatuk.atlassian.net/browse/LMS-154[LMS-154] Moodle update plugin local_cohortrole 4.1 => 4.2
+
+https://ssatuk.atlassian.net/browse/LMS-155[LMS-155] Moodle update plugin mod_hvp 1.23.0 => 1.23.1
+
+https://ssatuk.atlassian.net/browse/LMS-156[LMS-156] Moodle update plugin tool_coursearchiver 4.1.1 => 4.1.3
+
+https://ssatuk.atlassian.net/browse/LMS-157[LMS-157] Moodle update plugin filter_filtercodes 2.3.4 => 2.3.6
+
+https://ssatuk.atlassian.net/browse/LMS-158[LMS-158] Moodle update plugin local_course_templates 3.11-e => 4.2-a
