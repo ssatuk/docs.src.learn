@@ -1,0 +1,106 @@
+= MyLearning release ssat-v4.1.0-05
+
+== Overview
+
+Minor security updates and plugin updates.
+
+== Details
+
+=== Moodle upstream fixes 4.1.6+ 20231124
+
+This update includes various fixes for Moodle, improving functionality and addressing reported issues. https://ssatuk.atlassian.net/browse/LMS-167[LMS-167]
+
+For list of fixed issues see https://tracker.moodle.org/browse/MDL-79181?jql=project%20%3D%20mdl%20AND%20resolution%20%3D%20fixed%20AND%20fixVersion%20in%20(%224.1.6%22)%20ORDER%20BY%20priority%20DESC[upstream tracker]
+
+
+=== Update plugin local_cohortrole 4.2 => 4.3
+
+Now supports Moodle 4.3. https://ssatuk.atlassian.net/browse/LMS-168[LMS-168]
+
+
+
+=== Update plugin assignsubmission_maharaws 2023100401 => 2023110900
+
+Please refer to the https://github.com/catalyst/moodle-assignsubmission_maharaws/commits/main[changelog] for details on this update. https://ssatuk.atlassian.net/browse/LMS-170[LMS-170]
+
+=== Update plugin filter_filtercodes 2.3.6 => 2.4.3
+
+This update introduces new tags for menus, site information, and course end dates. It also includes performance improvements, bug fixes, and compatibility updates for different versions of Moodle. https://ssatuk.atlassian.net/browse/LMS-169[LMS-169]
+
+**2.4.3**
+
+* New {menuthemes} tag.
+* New {sitename} tag.
+* New {sitesummary} tag.
+* New {ifminstudent} tag.
+* {courseenddate} tag can now take an optional courseid parameter.
+* {courseenddate} tag will now display strftime date formats.
+* If the support page is blank, the {supportpage} tag will be blank instead of displaying the tag.
+* If the support email is blank, the {supportemail} tag will display "Not available" instead of the tag.
+* If the support name is blank, the {supportname} tag will display "Not available" instead of the tag.
+* Fixed {preferredlanguage} tag if the system default language is a child language pack.
+* Refactored for performance improvement performance. Enable more tags for embedding.
+* Instructions for enabling filters in custom menu.
+* {courseshortname} tag can now be used inside other tags.
+* {teamcards} now lists users with selected roles in Site Administration > Appearance > Course > Course Contacts.
+* Fixed issue where a tel: link was unexpectedly created in {teamcards}.
+
+**2.4.2**
+
+* Fixed bug with rendering of coursecards in Moodle 3.10 and earlier.
+
+**2.4.1**
+
+* New %7Bwwwroot%7D - alias for the {wwwroot} tag.
+* Fixed: {coursecard}, {coursecards}, {mycoursescards} and {coursecardsbyenrol} now include visible courses without an end date.
+* Fixed a failed PHPUnit test for {coursemoduleid}.
+* Fix spacing for some failed CSS code checks.
+* Tested compatible with PHP 8.2.
+
+**2.4.0**
+
+* New {courseoutline} tag (Pre-ALPHA - temporary - Do Not Use!).
+* Support for FontAwesome v6 syntax including fa-solid and fa-brands. E.g. {fa-solid fa-user}.
+* Fix-266: New {multilang}{/multilang} tag. Note: Depends on Moodle's Multi-language content filter.
+* Fix-198: Module level assigned roles detection to {ifcustomrole} and {ifnotcustomrole} tags.
+* New {myccourses} tag.
+* New {ifnotincourse}{/ifnotincourse} tags.
+* New {coursecount students:active} tag.
+* Fix-258: New {ifvisible} tag.
+* New {supportservicespage} tag (for Moodle 4.2 and later).
+* New {coursemoduleid} tag.
+* Fix-261: New {courseimage-url} tag.
+* New {chart progresspie} tag.
+* Fix-187: New {coursecard} tag (not the same as {coursecards}).
+* New {courseenrolmentdate} tag.
+* (ALPHA) New horizontal layout setting for {coursecards}, {coursecardsbyenrol} and {mycoursescards} (affects all 3).
+* (ALPHA) New table list layout setting for {coursecards}, {coursecardsbyenrol} and {mycoursescards} (affects all 3).
+* Fix-251: New optional course ID parameter for {coursestartdate} tag.
+* Alternative (alt) text to {qrcode} tag.
+* Documented tags in the source code.
+* Compatibility with Moodle 4.3.
+* The {button} tag will now attempt to automatically strip HTML tags created by some other filters.
+* Fixed profile pictures including user picture, gravatar and faceless avatar.
+* {scrape} tag automatically removes any HTML if Moodle turns the URL into a link.
+* Reordered tags to fix issues where some tags were not working or not being interpreted in the right order.
+* Fix-271: Fixed issue with multiple static declarations.
+* Fix-272: Fixed issue with {categorydescription} tag if it includes an embedded URL for the image.
+* Fix-274: Fixed issue creating {button} with {urlencoded}{shortcoursename}{/urlencoded}.
+* Fix-273: Fixed several tags that were not being replaced.
+* Fix-269: Fixed deprecation notice relating to trim() function in PHP 8.1.
+* Fix-241: You may now optionally specify a space-delimited list of category ID(s) in the {mycoursescards} tag.
+* Git now ignores .patch files.
+* Fix-256: The {courseid} and %7Bcourseid%7D tags can now be embedded in other tags.
+* Fix-256: The {coursemoduleid} and %7Bcoursecontextid%7D tags can now be embedded in other tags.
+* Fix-256: The {coursecontextid} and %7Bcoursecontextid%7D tags can now be embedded in other tags.
+* Fix-256: The {coursemoduleid} and %7Bcoursemoduleid%7D tags can now be embedded in other tags.
+* Fixed display of Course Cards Layout list of settings.
+* Addressed some PHP 8.1 compatibility warnings.
+* Some tags are now disabled if they do not meet Moodle and PHP version requirements.
+* Fix-253: Cohort names can now contain a dash in {ifincohort} tag.
+* Instruction to patch Moodle 4.2 to enable FilterCodes in the custom menu.
+* {timezone} now works correctly if the user's timezone is set to system timezone.
+* Refactored {mycourses...} tags and added missing unordered tag for {mycourses} tag.
+* {mycoursescards} tag will now display a message if the user is not enrolled in any courses.
+* Courses that are either hidden or expired will now appear in course cards if the user has the capability to see hidden courses.
+* Documentation (README.md)
