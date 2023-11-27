@@ -1,0 +1,36 @@
+= MyLearning release ssat-v4.3.0-01
+
+== Overview
+
+CAUTION: This release is in BETA and only installed on the Staging server.
+
+This is the first SSAT release of Moodle 4.3, consisting of:
+
+*  version 4.3 with all bug fixes to 24/11/2023, 
+* the SSAT modifications to the core code
+* the standard SSAT set of plugins.
+
+
+We have chosen to jump over 4.2 as it is only supported until 7 October 2024 (we were on 4.1 LTS which has security support to 8 December 2025), and go to 4.3 which is supported until 14 April 2025 in order to access the latest features.
+
+=== Additional feature for LPA site development
+
+In addition, on the Staging site only, to support Lead Practitioner site development, we have added the plugin https://docs.moodle.org/403/en/Questionnaire_module[Questionnaire].
+
+
+== Details
+
+Moodle documentation for the features added in 4.2 and 4.3 can be found as follows:
+
+=== 4.2
+
+* https://moodle.com/news/announcing-moodle-lms-4-2-new-and-improved-features/[Moodle 4.2 announcement post]
+* https://docs.moodle.org/402/en/New_features[New features in 4.2]
+* https://moodledev.io/general/releases/4.2[Developer notes for 4.2]
+
+=== 4.3
+
+* https://moodle.com/news/moodle-lms-4-3-a-leap-forward-in-user-experience-and-efficiency/[Moodle 4.3 announcement post]
+* https://docs.moodle.org/403/en/New_features[New features in 4.3]
+* https://moodledev.io/general/releases/4.3[Developer notes for 4.3]
+
